@@ -1,0 +1,774 @@
+[
+  {
+    "id": "keychron-dolch-pink",
+    "name": "Dolch Pink (Cherry PBT)",
+    "brand": "Keychron",
+    "theme": "general",
+    "tags": [
+      "pink",
+      "grey",
+      "dolch"
+    ],
+    "colors": {
+      "base": "#5f6266",
+      "legend": "#f4b6c6",
+      "accent": "#f29bb3"
+    },
+    "noveltyKeys": [],
+    "profile": "Cherry",
+    "keyCount": 219,
+    "fitsLayouts": [
+      "60%",
+      "65%",
+      "70%",
+      "75%"
+    ],
+    "lowProfile": false,
+    "officiallyLicensed": null,
+    "priceUsd": 40.99,
+    "availability": "unknown",
+    "storeUrl": "https://www.keychron.com/collections/add-on-for-q2-plate/products/cherry-profile-double-shot-pbt-full-set-keycaps-dolch-pink",
+    "affiliateUrl": "",
+    "sourceUrl": "https://www.keychron.com/collections/add-on-for-q2-plate/products/cherry-profile-double-shot-pbt-full-set-keycaps-dolch-pink",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "stock status (some Keychron sets show sold out)"
+    ]
+  },
+  {
+    "id": "keychron-grey-white-blue",
+    "name": "Grey, White and Blue (Cherry PBT)",
+    "brand": "Keychron",
+    "theme": "general",
+    "tags": [
+      "blue",
+      "grey",
+      "white"
+    ],
+    "colors": {
+      "base": "#e9e9e6",
+      "legend": "#2b2b2b",
+      "accent": "#2f6db5"
+    },
+    "noveltyKeys": [],
+    "profile": "Cherry",
+    "keyCount": 219,
+    "fitsLayouts": [
+      "60%",
+      "65%",
+      "70%",
+      "75%"
+    ],
+    "lowProfile": false,
+    "officiallyLicensed": null,
+    "priceUsd": 39.99,
+    "availability": "unknown",
+    "storeUrl": "https://www.keychron.com/collections/keycaps-for-q65-max",
+    "affiliateUrl": "",
+    "sourceUrl": "https://www.keychron.com/collections/keycaps-for-q65-max",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "stock status"
+    ]
+  },
+  {
+    "id": "keychron-player",
+    "name": "Player (Cherry PBT)",
+    "brand": "Keychron",
+    "theme": "general",
+    "tags": [
+      "retro",
+      "gaming",
+      "grey"
+    ],
+    "colors": {
+      "base": "#d9d6cf",
+      "legend": "#2b2b2b",
+      "accent": "#c0392b"
+    },
+    "noveltyKeys": [],
+    "profile": "Cherry",
+    "keyCount": 219,
+    "fitsLayouts": [
+      "60%",
+      "65%",
+      "70%",
+      "75%"
+    ],
+    "lowProfile": false,
+    "officiallyLicensed": null,
+    "priceUsd": 39.99,
+    "availability": "unknown",
+    "storeUrl": "https://www.keychron.com/collections/keycaps-for-q65-max",
+    "affiliateUrl": "",
+    "sourceUrl": "https://www.keychron.com/collections/keycaps-for-q65-max",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "stock status",
+      "accent colors"
+    ]
+  },
+  {
+    "id": "keychron-bow",
+    "name": "Black on White (Cherry PBT)",
+    "brand": "Keychron",
+    "theme": "general",
+    "tags": [
+      "white",
+      "black",
+      "minimal"
+    ],
+    "colors": {
+      "base": "#f2f2f0",
+      "legend": "#1c1c1c",
+      "accent": "#f2f2f0"
+    },
+    "noveltyKeys": [],
+    "profile": "Cherry",
+    "keyCount": 219,
+    "fitsLayouts": [
+      "60%",
+      "65%",
+      "70%",
+      "75%"
+    ],
+    "lowProfile": false,
+    "officiallyLicensed": null,
+    "priceUsd": 39.99,
+    "availability": "unknown",
+    "storeUrl": "https://www.keychron.com/collections/keycaps-for-q65-max",
+    "affiliateUrl": "",
+    "sourceUrl": "https://www.keychron.com/collections/keycaps-for-q65-max",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "stock status"
+    ]
+  },
+  {
+    "id": "keychron-wob",
+    "name": "White on Black (Cherry PBT)",
+    "brand": "Keychron",
+    "theme": "general",
+    "tags": [
+      "black",
+      "white",
+      "minimal"
+    ],
+    "colors": {
+      "base": "#1c1c1c",
+      "legend": "#f2f2f0",
+      "accent": "#1c1c1c"
+    },
+    "noveltyKeys": [],
+    "profile": "Cherry",
+    "keyCount": 219,
+    "fitsLayouts": [
+      "60%",
+      "65%",
+      "70%",
+      "75%"
+    ],
+    "lowProfile": false,
+    "officiallyLicensed": null,
+    "priceUsd": 39.99,
+    "availability": "unknown",
+    "storeUrl": "https://www.keychron.com/collections/keycaps-for-q6?page=2",
+    "affiliateUrl": "",
+    "sourceUrl": "https://www.keychron.com/collections/keycaps-for-q6?page=2",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "stock status"
+    ]
+  },
+  {
+    "id": "keychron-hacker-mint",
+    "name": "Hacker Mint (Cherry PBT)",
+    "brand": "Keychron",
+    "theme": "general",
+    "tags": [
+      "mint",
+      "green",
+      "dark"
+    ],
+    "colors": {
+      "base": "#2b2f33",
+      "legend": "#7fe0c3",
+      "accent": "#7fe0c3"
+    },
+    "noveltyKeys": [],
+    "profile": "Cherry",
+    "keyCount": 219,
+    "fitsLayouts": [
+      "60%",
+      "65%",
+      "70%",
+      "75%"
+    ],
+    "lowProfile": false,
+    "officiallyLicensed": null,
+    "priceUsd": 39.99,
+    "availability": "unknown",
+    "storeUrl": "https://www.zenoxstore.com/en-tw/collections/diy-keyboard-workshop-keycaps-selection",
+    "affiliateUrl": "",
+    "sourceUrl": "https://www.zenoxstore.com/en-tw/collections/diy-keyboard-workshop-keycaps-selection",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "price is Keychron's usual $39.99; confirm",
+      "US store link"
+    ]
+  },
+  {
+    "id": "keychron-camel",
+    "name": "Camel (Cherry PBT)",
+    "brand": "Keychron",
+    "theme": "general",
+    "tags": [
+      "brown",
+      "beige",
+      "warm"
+    ],
+    "colors": {
+      "base": "#e8dcc6",
+      "legend": "#4a3b2a",
+      "accent": "#b07b4f"
+    },
+    "noveltyKeys": [],
+    "profile": "Cherry",
+    "keyCount": 219,
+    "fitsLayouts": [
+      "60%",
+      "65%",
+      "70%",
+      "75%"
+    ],
+    "lowProfile": false,
+    "officiallyLicensed": null,
+    "priceUsd": 39.99,
+    "availability": "unknown",
+    "storeUrl": "https://www.keychron.com/collections/keycaps-for-q6?page=2",
+    "affiliateUrl": "",
+    "sourceUrl": "https://www.keychron.com/collections/keycaps-for-q6?page=2",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "stock status"
+    ]
+  },
+  {
+    "id": "keychron-blue-planet",
+    "name": "Blue Planet (Cherry dye-sub)",
+    "brand": "Keychron",
+    "theme": "general",
+    "tags": [
+      "blue",
+      "space"
+    ],
+    "colors": {
+      "base": "#1f3a6b",
+      "legend": "#e8eef7",
+      "accent": "#5aa0e6"
+    },
+    "noveltyKeys": [],
+    "profile": "Cherry",
+    "keyCount": null,
+    "fitsLayouts": [
+      "60%",
+      "65%",
+      "70%",
+      "75%"
+    ],
+    "lowProfile": false,
+    "officiallyLicensed": null,
+    "priceUsd": 39.99,
+    "availability": "unknown",
+    "storeUrl": "https://www.keychron.com/collections/keycaps-for-q8?page=5",
+    "affiliateUrl": "",
+    "sourceUrl": "https://www.keychron.com/collections/keycaps-for-q8?page=5",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "key count and layout fit (assumed full set)"
+    ]
+  },
+  {
+    "id": "keychron-cloud-and-snow",
+    "name": "Cloud and Snow (Cherry dye-sub)",
+    "brand": "Keychron",
+    "theme": "general",
+    "tags": [
+      "white",
+      "light blue",
+      "soft"
+    ],
+    "colors": {
+      "base": "#f4f7fa",
+      "legend": "#6a8fb3",
+      "accent": "#bcd6ee"
+    },
+    "noveltyKeys": [],
+    "profile": "Cherry",
+    "keyCount": null,
+    "fitsLayouts": [
+      "60%",
+      "65%",
+      "70%",
+      "75%"
+    ],
+    "lowProfile": false,
+    "officiallyLicensed": null,
+    "priceUsd": 39.99,
+    "availability": "unknown",
+    "storeUrl": "https://www.keychron.com/collections/keycaps-for-q8?page=5",
+    "affiliateUrl": "",
+    "sourceUrl": "https://www.keychron.com/collections/keycaps-for-q8?page=5",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "key count and layout fit (assumed full set)"
+    ]
+  },
+  {
+    "id": "am-dark-glacier",
+    "name": "Dark Glacier",
+    "brand": "Angry Miao",
+    "theme": "general",
+    "tags": [
+      "translucent",
+      "black",
+      "rgb"
+    ],
+    "colors": {
+      "base": "#2a2d33",
+      "legend": "#ffffff",
+      "accent": "#2a2d33"
+    },
+    "noveltyKeys": [],
+    "profile": "unknown",
+    "keyCount": null,
+    "fitsLayouts": [
+      "75%"
+    ],
+    "lowProfile": false,
+    "officiallyLicensed": null,
+    "priceUsd": 19.0,
+    "availability": "unknown",
+    "storeUrl": "https://store.angrymiao.com/pages/cyberboard-r4-graffiti-landing",
+    "affiliateUrl": "",
+    "sourceUrl": "https://store.angrymiao.com/pages/cyberboard-r4-graffiti-landing",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "layouts it fits",
+      "profile",
+      "price is 'from $19'"
+    ]
+  },
+  {
+    "id": "ds-nezuko-licensed",
+    "name": "Demon Slayer Nezuko full-art",
+    "brand": "Demon Slayer (licensed)",
+    "theme": "anime",
+    "tags": [
+      "demon slayer",
+      "nezuko",
+      "pink"
+    ],
+    "colors": {
+      "base": "#f3c1d0",
+      "legend": "#2b1b1b",
+      "accent": "#e8743b"
+    },
+    "noveltyKeys": [
+      {
+        "key": "Esc",
+        "shape": "bamboo stick",
+        "color": "#5a8f3a"
+      }
+    ],
+    "profile": "Cherry",
+    "keyCount": null,
+    "fitsLayouts": [
+      "60%",
+      "65%",
+      "75%"
+    ],
+    "lowProfile": false,
+    "officiallyLicensed": true,
+    "priceUsd": null,
+    "availability": "unknown",
+    "storeUrl": "https://www.newegg.com/p/3C6-004T-001A6",
+    "affiliateUrl": "",
+    "sourceUrl": "https://www.newegg.com/p/3C6-004T-001A6",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "price",
+      "key count / layout fit",
+      "seller"
+    ]
+  },
+  {
+    "id": "ds-inosuke-licensed",
+    "name": "Demon Slayer Inosuke",
+    "brand": "Demon Slayer (licensed)",
+    "theme": "anime",
+    "tags": [
+      "demon slayer",
+      "inosuke",
+      "blue"
+    ],
+    "colors": {
+      "base": "#5c7a99",
+      "legend": "#f2f2f2",
+      "accent": "#8a6a4f"
+    },
+    "noveltyKeys": [],
+    "profile": "Cherry",
+    "keyCount": null,
+    "fitsLayouts": [
+      "60%",
+      "65%",
+      "75%"
+    ],
+    "lowProfile": false,
+    "officiallyLicensed": true,
+    "priceUsd": null,
+    "availability": "unknown",
+    "storeUrl": "https://www.desertcart.ie/products/677640451-team-liquid-demon-slayer-kimetsu-no-yaiba-inosuke-pbt-dye",
+    "affiliateUrl": "",
+    "sourceUrl": "https://www.desertcart.ie/products/677640451-team-liquid-demon-slayer-kimetsu-no-yaiba-inosuke-pbt-dye",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "price",
+      "layout fit",
+      "find a US store"
+    ]
+  },
+  {
+    "id": "ds-zenitsu-108",
+    "name": "Demon Slayer Zenitsu (108 keys)",
+    "brand": "Eclipseware",
+    "theme": "anime",
+    "tags": [
+      "demon slayer",
+      "zenitsu",
+      "yellow",
+      "lightning"
+    ],
+    "colors": {
+      "base": "#f6d24a",
+      "legend": "#3a2a10",
+      "accent": "#f08a24"
+    },
+    "noveltyKeys": [
+      {
+        "key": "Esc",
+        "shape": "lightning bolt",
+        "color": "#f6d24a"
+      }
+    ],
+    "profile": "unknown",
+    "keyCount": 108,
+    "fitsLayouts": [
+      "60%"
+    ],
+    "lowProfile": false,
+    "officiallyLicensed": false,
+    "priceUsd": 35.0,
+    "availability": "unknown",
+    "storeUrl": "https://m.reach.dog/shop/eclipseware/products/demon-slayer-agatsuma-zenitsu-theme-pbt-material-keycaps-108-keys",
+    "affiliateUrl": "",
+    "sourceUrl": "https://m.reach.dog/shop/eclipseware/products/demon-slayer-agatsuma-zenitsu-theme-pbt-material-keycaps-108-keys",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "unofficial fan set",
+      "108-key sets usually lack 65%/75% keys"
+    ]
+  },
+  {
+    "id": "ds-hokeyio-108",
+    "name": "Demon Slayer (Hokeyio, 108 keys)",
+    "brand": "Hokeyio",
+    "theme": "anime",
+    "tags": [
+      "demon slayer",
+      "tanjiro",
+      "green",
+      "black"
+    ],
+    "colors": {
+      "base": "#2f6b3a",
+      "legend": "#f2f2f2",
+      "accent": "#1c1c1c"
+    },
+    "noveltyKeys": [],
+    "profile": "OEM",
+    "keyCount": 108,
+    "fitsLayouts": [
+      "60%"
+    ],
+    "lowProfile": false,
+    "officiallyLicensed": false,
+    "priceUsd": null,
+    "availability": "unknown",
+    "storeUrl": "https://www.newegg.com/p/3C6-05VP-00E59",
+    "affiliateUrl": "",
+    "sourceUrl": "https://www.newegg.com/p/3C6-05VP-00E59",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "price",
+      "unofficial fan set",
+      "colors guessed"
+    ]
+  },
+  {
+    "id": "akko-eva-01",
+    "name": "EVA-01 design",
+    "brand": "Akko",
+    "theme": "anime",
+    "tags": [
+      "evangelion",
+      "purple",
+      "green"
+    ],
+    "colors": {
+      "base": "#5b3a8c",
+      "legend": "#9be04a",
+      "accent": "#9be04a"
+    },
+    "noveltyKeys": [],
+    "profile": "ASA",
+    "keyCount": 158,
+    "fitsLayouts": [
+      "60%",
+      "65%",
+      "75%"
+    ],
+    "lowProfile": false,
+    "officiallyLicensed": null,
+    "priceUsd": null,
+    "availability": "unknown",
+    "storeUrl": "https://computerlounge.co.nz/products/akko-eva-01-design-keycap-set",
+    "affiliateUrl": "",
+    "sourceUrl": "https://computerlounge.co.nz/products/akko-eva-01-design-keycap-set",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "price ($49 at a NZ store, sale)",
+      "layout fit"
+    ]
+  },
+  {
+    "id": "akko-spy-family-a",
+    "name": "Spy x Family (Set A)",
+    "brand": "Akko",
+    "theme": "anime",
+    "tags": [
+      "spy x family",
+      "anya",
+      "pink"
+    ],
+    "colors": {
+      "base": "#f6e7ea",
+      "legend": "#3a2f3a",
+      "accent": "#f2a7c0"
+    },
+    "noveltyKeys": [],
+    "profile": "MOA",
+    "keyCount": 128,
+    "fitsLayouts": [
+      "60%",
+      "65%",
+      "75%"
+    ],
+    "lowProfile": false,
+    "officiallyLicensed": true,
+    "priceUsd": null,
+    "availability": "unknown",
+    "storeUrl": "https://akkogear.eu/products/spy-family-keycap-set",
+    "affiliateUrl": "",
+    "sourceUrl": "https://akkogear.eu/products/spy-family-keycap-set",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "price",
+      "US store",
+      "layout fit"
+    ]
+  },
+  {
+    "id": "akko-saint-seiya",
+    "name": "Saint Seiya",
+    "brand": "Akko",
+    "theme": "anime",
+    "tags": [
+      "saint seiya",
+      "gold",
+      "blue"
+    ],
+    "colors": {
+      "base": "#1f2f5a",
+      "legend": "#e8c55a",
+      "accent": "#e8c55a"
+    },
+    "noveltyKeys": [],
+    "profile": "unknown",
+    "keyCount": 145,
+    "fitsLayouts": [
+      "60%",
+      "65%",
+      "75%"
+    ],
+    "lowProfile": false,
+    "officiallyLicensed": true,
+    "priceUsd": null,
+    "availability": "unknown",
+    "storeUrl": "https://monsgeek.eu/products/saint-seiya-keycap-set-145-key",
+    "affiliateUrl": "",
+    "sourceUrl": "https://monsgeek.eu/products/saint-seiya-keycap-set-145-key",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "price",
+      "profile",
+      "colors guessed"
+    ]
+  },
+  {
+    "id": "akko-doraemon",
+    "name": "Doraemon",
+    "brand": "Akko",
+    "theme": "anime",
+    "tags": [
+      "doraemon",
+      "blue",
+      "white"
+    ],
+    "colors": {
+      "base": "#f5f5f2",
+      "legend": "#1f6fc2",
+      "accent": "#2a8fe0"
+    },
+    "noveltyKeys": [
+      {
+        "key": "Esc",
+        "shape": "bell",
+        "color": "#f2c230"
+      }
+    ],
+    "profile": "unknown",
+    "keyCount": 138,
+    "fitsLayouts": [
+      "60%",
+      "65%",
+      "75%"
+    ],
+    "lowProfile": false,
+    "officiallyLicensed": true,
+    "priceUsd": null,
+    "availability": "unknown",
+    "storeUrl": "https://monsgeek.eu/products/doraemon-keycap-set-138-key",
+    "affiliateUrl": "",
+    "sourceUrl": "https://monsgeek.eu/products/doraemon-keycap-set-138-key",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "price",
+      "profile"
+    ]
+  },
+  {
+    "id": "akko-taiko",
+    "name": "Taiko no Tatsujin",
+    "brand": "Akko",
+    "theme": "anime",
+    "tags": [
+      "taiko",
+      "game",
+      "red"
+    ],
+    "colors": {
+      "base": "#f4efe6",
+      "legend": "#2b2b2b",
+      "accent": "#e23b2e"
+    },
+    "noveltyKeys": [
+      {
+        "key": "Esc",
+        "shape": "drum",
+        "color": "#e23b2e"
+      }
+    ],
+    "profile": "JDA",
+    "keyCount": 137,
+    "fitsLayouts": [
+      "60%",
+      "65%",
+      "75%"
+    ],
+    "lowProfile": false,
+    "officiallyLicensed": true,
+    "priceUsd": null,
+    "availability": "unknown",
+    "storeUrl": "https://monsgeek.eu/products/taiko-no-tatsujin-keycap-set-137-key",
+    "affiliateUrl": "",
+    "sourceUrl": "https://monsgeek.eu/products/taiko-no-tatsujin-keycap-set-137-key",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "price"
+    ]
+  },
+  {
+    "id": "fantech-one-piece",
+    "name": "One Piece ACK03 (Luffy)",
+    "brand": "Fantech",
+    "theme": "anime",
+    "tags": [
+      "one piece",
+      "luffy",
+      "red"
+    ],
+    "colors": {
+      "base": "#f2e6d0",
+      "legend": "#c0392b",
+      "accent": "#f2c230"
+    },
+    "noveltyKeys": [
+      {
+        "key": "Esc",
+        "shape": "straw hat",
+        "color": "#f2c230"
+      }
+    ],
+    "profile": "Cherry",
+    "keyCount": 134,
+    "fitsLayouts": [
+      "60%",
+      "65%",
+      "75%"
+    ],
+    "lowProfile": false,
+    "officiallyLicensed": true,
+    "priceUsd": null,
+    "availability": "unknown",
+    "storeUrl": "https://ecommerce.datablitz.com.ph/products/fantech-x-one-piece-ack03-134-keys-cherry-profile-keycaps-luffy-zoro-luffy-gear-5-nami",
+    "affiliateUrl": "",
+    "sourceUrl": "https://ecommerce.datablitz.com.ph/products/fantech-x-one-piece-ack03-134-keys-cherry-profile-keycaps-luffy-zoro-luffy-gear-5-nami",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "US price and store",
+      "colors per character"
+    ]
+  }
+]

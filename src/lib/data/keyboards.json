@@ -1,0 +1,924 @@
+[
+  {
+    "id": "gmk67",
+    "name": "GMK67",
+    "brand": "Zuoya",
+    "layout": "65%",
+    "dimensionsMm": {
+      "length": 380,
+      "width": 140,
+      "height": 40
+    },
+    "caseShape": "standard",
+    "variants": [
+      {
+        "name": "Black",
+        "caseColorHex": "#1f1f1f"
+      },
+      {
+        "name": "White",
+        "caseColorHex": "#f2f2f2"
+      },
+      {
+        "name": "Sky Blue",
+        "caseColorHex": "#8ec9f0"
+      },
+      {
+        "name": "Purple",
+        "caseColorHex": "#9b7fd1"
+      }
+    ],
+    "features": [
+      {
+        "type": "knob",
+        "position": "top-right"
+      }
+    ],
+    "wireless": true,
+    "priceUsd": 64.99,
+    "availability": "unknown",
+    "storeUrl": "https://www.thockking.com/products/gmk67-v2-65-wireless-qmk-mechanical-keyboard",
+    "affiliateUrl": "",
+    "imageUrl": null,
+    "sourceUrl": "https://www.thockking.com/products/gmk67-v2-65-wireless-qmk-mechanical-keyboard",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "dimensions disagree between sources (380x140x40 vs 317x127x33)",
+      "stock status",
+      "knob position"
+    ],
+    "notes": "Price is for the V2 barebones kit at Thock King."
+  },
+  {
+    "id": "tofu60-redux-v2",
+    "name": "Tofu60 Redux V2",
+    "brand": "KBDfans",
+    "layout": "60%",
+    "dimensionsMm": {
+      "length": 294.8,
+      "width": 112.25,
+      "height": 32.82
+    },
+    "caseShape": "standard",
+    "variants": [
+      {
+        "name": "Anodized Black",
+        "caseColorHex": "#1c1c1c"
+      },
+      {
+        "name": "Anodized Dark Blue",
+        "caseColorHex": "#1f3a6b"
+      },
+      {
+        "name": "Anodized Silver",
+        "caseColorHex": "#c0c0c0"
+      },
+      {
+        "name": "Anodized Mocha",
+        "caseColorHex": "#6f4e37"
+      },
+      {
+        "name": "Anodized Burgundy",
+        "caseColorHex": "#6d1f2e"
+      },
+      {
+        "name": "E-coat Light Pink",
+        "caseColorHex": "#f4c6d0"
+      },
+      {
+        "name": "E-coat Light Blue",
+        "caseColorHex": "#a9d2f0"
+      },
+      {
+        "name": "E-coat Flash White",
+        "caseColorHex": "#f5f5f5"
+      }
+    ],
+    "features": [],
+    "wireless": false,
+    "priceUsd": 65.0,
+    "availability": "varies",
+    "storeUrl": "https://divinikey.com/collections/kbdfans/products/kbdfans-tofu60-redux-v2-keyboard-case",
+    "affiliateUrl": "",
+    "imageUrl": null,
+    "sourceUrl": "https://divinikey.com/collections/kbdfans/products/kbdfans-tofu60-redux-v2-keyboard-case",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "case only: needs PCB, plate, switches; total price will be higher",
+      "wireless depends on PCB chosen"
+    ],
+    "notes": "Sold as a case. Matcher should warn that it is a DIY part."
+  },
+  {
+    "id": "cyberboard-r4",
+    "name": "CYBERBOARD R4",
+    "brand": "Angry Miao",
+    "layout": "75%",
+    "dimensionsMm": {
+      "length": 340.5,
+      "width": 181,
+      "height": 42.94
+    },
+    "caseShape": "tall-wedge",
+    "variants": [
+      {
+        "name": "Gangstar (Purple)",
+        "caseColorHex": "#5b2a86"
+      },
+      {
+        "name": "Fluo Free (Lime)",
+        "caseColorHex": "#c6e83a"
+      },
+      {
+        "name": "Cloud White",
+        "caseColorHex": "#f0f0ee"
+      },
+      {
+        "name": "Stone Face (Grey)",
+        "caseColorHex": "#7d7f82"
+      }
+    ],
+    "features": [
+      {
+        "type": "led-matrix",
+        "position": "back panel, above top row"
+      }
+    ],
+    "wireless": true,
+    "priceUsd": 730.0,
+    "availability": "sold_out",
+    "storeUrl": "https://store.angrymiao.com/collections/all/products/am-cyberboard-r4",
+    "affiliateUrl": "",
+    "imageUrl": null,
+    "sourceUrl": "https://prototypist.net/products/in-stock-cyberboard-r4-keyboard-kit",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "price shown for both kit and bundle; kit may be cheaper"
+    ],
+    "notes": "Height is rear height; front height 18.1 mm."
+  },
+  {
+    "id": "am-compact-touch",
+    "name": "AM Compact Touch (65 Less)",
+    "brand": "Angry Miao",
+    "layout": "65%",
+    "dimensionsMm": {
+      "length": 296.7,
+      "width": 119.9,
+      "height": 39.2
+    },
+    "caseShape": "standard",
+    "variants": [
+      {
+        "name": "8-Bit (Red/White)",
+        "caseColorHex": "#d83a34"
+      },
+      {
+        "name": "Night Drive (Purple)",
+        "caseColorHex": "#4b2c7a"
+      },
+      {
+        "name": "Mech Love",
+        "caseColorHex": "#c9b48a"
+      },
+      {
+        "name": "All Black",
+        "caseColorHex": "#1a1a1a"
+      },
+      {
+        "name": "Back to the Future (Silver)",
+        "caseColorHex": "#c4c6c8"
+      },
+      {
+        "name": "Hard Candy (Blue/White)",
+        "caseColorHex": "#9cc8ec"
+      }
+    ],
+    "features": [
+      {
+        "type": "touchbar",
+        "position": "front edge, replaces arrow keys"
+      }
+    ],
+    "wireless": true,
+    "priceUsd": 549.0,
+    "availability": "sold_out",
+    "storeUrl": "https://store.angrymiao.com/collections/keyboard/products/am-compact-touch",
+    "affiliateUrl": "",
+    "imageUrl": null,
+    "sourceUrl": "https://store.angrymiao.com/collections/keyboard/products/am-compact-touch",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "dimensions not published; about 11% smaller than a normal 65%",
+      "layout is custom: no arrow keys"
+    ],
+    "notes": "Price is the bundle; base kits start lower."
+  },
+  {
+    "id": "qk60",
+    "name": "QK60 (Round 3)",
+    "brand": "Qwertykeys",
+    "layout": "60%",
+    "dimensionsMm": {
+      "length": 296.3,
+      "width": 113.8,
+      "height": 31.69
+    },
+    "caseShape": "standard",
+    "variants": [
+      {
+        "name": "Smokey Acrylic top / Mint bottom",
+        "caseColorHex": "#4a4a4a"
+      },
+      {
+        "name": "Clear Acrylic top",
+        "caseColorHex": "#e8eef2"
+      }
+    ],
+    "features": [],
+    "wireless": true,
+    "priceUsd": 135.0,
+    "availability": "pre-order",
+    "storeUrl": "https://keebsforall.com/products/qk60-round-3-by-qwertykeys",
+    "affiliateUrl": "",
+    "imageUrl": null,
+    "sourceUrl": "https://www.qwertykeys.com/products/qk60-round-3",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "dimensions not published",
+      "colors listed are partial",
+      "wireless only with tri-mode PCB"
+    ],
+    "notes": "Supports WK, WKL and HHKB 60% layouts."
+  },
+  {
+    "id": "neo60",
+    "name": "Neo60 (Core)",
+    "brand": "Qwertykeys",
+    "layout": "60%",
+    "dimensionsMm": {
+      "length": 292.9,
+      "width": 108.8,
+      "height": 18.2
+    },
+    "caseShape": "standard",
+    "variants": [
+      {
+        "name": "Anodized Black",
+        "caseColorHex": "#1d1d1d"
+      },
+      {
+        "name": "Anodized Silver",
+        "caseColorHex": "#c3c3c3"
+      },
+      {
+        "name": "Anodized Teal",
+        "caseColorHex": "#2a8c8c"
+      },
+      {
+        "name": "Anodized Grey-gold",
+        "caseColorHex": "#a89f80"
+      }
+    ],
+    "features": [],
+    "wireless": true,
+    "priceUsd": 89.9,
+    "availability": "pre-order",
+    "storeUrl": "https://www.qwertykeys.com/products/neo60",
+    "affiliateUrl": "",
+    "imageUrl": null,
+    "sourceUrl": "https://www.qwertykeys.com/products/neo60",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "base price may not include case color upcharge ($19.90-24.90)",
+      "height is front height only"
+    ],
+    "notes": "Neo60 Cu (brass/copper bottom) is a premium variant, not listed here."
+  },
+  {
+    "id": "keychron-q1-max",
+    "name": "Q1 Max",
+    "brand": "Keychron",
+    "layout": "75%",
+    "dimensionsMm": {
+      "length": 327.5,
+      "width": 145,
+      "height": 35.8
+    },
+    "caseShape": "standard",
+    "variants": [
+      {
+        "name": "Carbon Black",
+        "caseColorHex": "#2b2b2b"
+      },
+      {
+        "name": "Shell White",
+        "caseColorHex": "#ecebe6"
+      },
+      {
+        "name": "Purple",
+        "caseColorHex": "#6e5a9b"
+      }
+    ],
+    "features": [
+      {
+        "type": "knob",
+        "position": "top-right"
+      }
+    ],
+    "wireless": true,
+    "priceUsd": 229.99,
+    "availability": "backordered",
+    "storeUrl": "https://www.keychron.com/products/keychron-q1-max-qmk-via-wireless-custom-mechanical-keyboard",
+    "affiliateUrl": "",
+    "imageUrl": null,
+    "sourceUrl": "https://www.keychron.com/products/keychron-q1-max-qmk-via-wireless-custom-mechanical-keyboard",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "height not listed"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "keychron-v1-max",
+    "name": "V1 Max",
+    "brand": "Keychron",
+    "layout": "75%",
+    "dimensionsMm": {
+      "length": 328.5,
+      "width": 148.7,
+      "height": 29.4
+    },
+    "caseShape": "standard",
+    "variants": [
+      {
+        "name": "Carbon Black",
+        "caseColorHex": "#2b2b2b"
+      }
+    ],
+    "features": [
+      {
+        "type": "knob",
+        "position": "top-right"
+      }
+    ],
+    "wireless": true,
+    "priceUsd": 114.99,
+    "availability": "backordered",
+    "storeUrl": "https://www.keychron.com/products/keychron-v1-max-qmk-via-wireless-custom-mechanical-keyboard",
+    "affiliateUrl": "",
+    "imageUrl": null,
+    "sourceUrl": "https://www.keychron.com/products/keychron-v1-max-qmk-via-wireless-custom-mechanical-keyboard",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [],
+    "notes": "Height is back height without keycaps."
+  },
+  {
+    "id": "keychron-q2-max",
+    "name": "Q2 Max",
+    "brand": "Keychron",
+    "layout": "65%",
+    "dimensionsMm": {
+      "length": 327,
+      "width": 121,
+      "height": 34.8
+    },
+    "caseShape": "standard",
+    "variants": [
+      {
+        "name": "Carbon Black",
+        "caseColorHex": "#2b2b2b"
+      },
+      {
+        "name": "Shell White",
+        "caseColorHex": "#ecebe6"
+      }
+    ],
+    "features": [
+      {
+        "type": "knob",
+        "position": "top-right"
+      }
+    ],
+    "wireless": true,
+    "priceUsd": 229.99,
+    "availability": "backordered",
+    "storeUrl": "https://www.keychron.com/products/keychron-q2-max-qmk-via-wireless-custom-mechanical-keyboard",
+    "affiliateUrl": "",
+    "imageUrl": null,
+    "sourceUrl": "https://www.keychron.com/products/keychron-q2-max-qmk-via-wireless-custom-mechanical-keyboard",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "height not listed"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "keychron-k14",
+    "name": "K14",
+    "brand": "Keychron",
+    "layout": "70%",
+    "dimensionsMm": {
+      "length": 333,
+      "width": 104,
+      "height": 42
+    },
+    "caseShape": "standard",
+    "variants": [
+      {
+        "name": "Black (plastic frame)",
+        "caseColorHex": "#222222"
+      }
+    ],
+    "features": [],
+    "wireless": true,
+    "priceUsd": 67.99,
+    "availability": "varies",
+    "storeUrl": "https://keychron.com/products/keychron-k14-wireless-mechanical-keyboard",
+    "affiliateUrl": "",
+    "imageUrl": null,
+    "sourceUrl": "https://keychron.com/products/keychron-k14-wireless-mechanical-keyboard",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "only 70% board in the list",
+      "sale price; regular $89.99",
+      "colors beyond black not confirmed"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "nuphy-halo65-v2",
+    "name": "Halo65 V2",
+    "brand": "NuPhy",
+    "layout": "65%",
+    "dimensionsMm": {
+      "length": 318,
+      "width": 115,
+      "height": 28
+    },
+    "caseShape": "standard",
+    "variants": [
+      {
+        "name": "Obsidian Black",
+        "caseColorHex": "#1b1b1d"
+      },
+      {
+        "name": "Ionic White",
+        "caseColorHex": "#f1f1ef"
+      },
+      {
+        "name": "Mojito (Green)",
+        "caseColorHex": "#9ccc65"
+      },
+      {
+        "name": "Blue Lagoon",
+        "caseColorHex": "#4fa3d9"
+      },
+      {
+        "name": "Sakura Fizz (Pink)",
+        "caseColorHex": "#f7b6c8"
+      }
+    ],
+    "features": [],
+    "wireless": true,
+    "priceUsd": 119.95,
+    "availability": "unknown",
+    "storeUrl": "https://nuphy.com/products/nuphy-halo65-v2",
+    "affiliateUrl": "",
+    "imageUrl": null,
+    "sourceUrl": "https://www.notebookcheck.net/NuPhy-Halo65-V2-launches-with-QMK-VIA-support-1000Hz-polling-rate-and-more-color-options.1099325.0.html",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "stock status",
+      "dimensions from keeb-finder, not NuPhy"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "nuphy-air75-v2",
+    "name": "Air75 V2",
+    "brand": "NuPhy",
+    "layout": "75%",
+    "dimensionsMm": {
+      "length": 316.4,
+      "width": 132.5,
+      "height": 13.5
+    },
+    "caseShape": "low-profile",
+    "variants": [
+      {
+        "name": "Ionic White",
+        "caseColorHex": "#f1f1ef"
+      },
+      {
+        "name": "Basalt Black",
+        "caseColorHex": "#2a2a2c"
+      }
+    ],
+    "features": [
+      {
+        "type": "led-strip",
+        "position": "left and right sides"
+      }
+    ],
+    "wireless": true,
+    "priceUsd": 119.95,
+    "availability": "in_stock",
+    "storeUrl": "https://nuphy.com/products/air75-v2",
+    "affiliateUrl": "",
+    "imageUrl": null,
+    "sourceUrl": "https://nuphy.com/products/air75-v2",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "low-profile: most keycap sets here will NOT fit"
+    ],
+    "notes": "Low-profile switches; regular keycap sets don't fit."
+  },
+  {
+    "id": "epomaker-galaxy70",
+    "name": "Galaxy70",
+    "brand": "Epomaker",
+    "layout": "75%",
+    "dimensionsMm": {
+      "length": 350.6,
+      "width": 140.9,
+      "height": 32.5
+    },
+    "caseShape": "standard",
+    "variants": [
+      {
+        "name": "Gray",
+        "caseColorHex": "#9a9a9a"
+      },
+      {
+        "name": "White",
+        "caseColorHex": "#f0f0f0"
+      },
+      {
+        "name": "Black",
+        "caseColorHex": "#1f1f1f"
+      },
+      {
+        "name": "Blue",
+        "caseColorHex": "#4a78c2"
+      }
+    ],
+    "features": [
+      {
+        "type": "knob",
+        "position": "top-right"
+      }
+    ],
+    "wireless": true,
+    "priceUsd": 99.99,
+    "availability": "unknown",
+    "storeUrl": "https://epomaker.com/es/products/epomaker-galaxy70",
+    "affiliateUrl": "",
+    "imageUrl": null,
+    "sourceUrl": "https://epomaker.com/es/products/epomaker-galaxy70",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "despite the name it is a 75% layout",
+      "stock status"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "epomaker-th80-v2-pro",
+    "name": "TH80 V2 Pro",
+    "brand": "Epomaker",
+    "layout": "75%",
+    "dimensionsMm": {
+      "length": 323,
+      "width": 141,
+      "height": 47
+    },
+    "caseShape": "standard",
+    "variants": [
+      {
+        "name": "Black",
+        "caseColorHex": "#1f1f1f"
+      },
+      {
+        "name": "White",
+        "caseColorHex": "#f0f0f0"
+      },
+      {
+        "name": "Pink",
+        "caseColorHex": "#f2b8c6"
+      }
+    ],
+    "features": [
+      {
+        "type": "knob",
+        "position": "top-right"
+      },
+      {
+        "type": "screen",
+        "size": "1.06in",
+        "position": "top-right, next to knob"
+      }
+    ],
+    "wireless": true,
+    "priceUsd": 77.99,
+    "availability": "unknown",
+    "storeUrl": "https://epomaker.com/products/epomaker-th80-v2-pro",
+    "affiliateUrl": "",
+    "imageUrl": null,
+    "sourceUrl": "https://hwbusters.com/peripherals/epomaker-th80-v2-pro-mechanical-keyboard-review/",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "stock status",
+      "screen position"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "aula-f75",
+    "name": "F75",
+    "brand": "Epomaker x Aula",
+    "layout": "75%",
+    "dimensionsMm": {
+      "length": 323,
+      "width": 143,
+      "height": 43
+    },
+    "caseShape": "standard",
+    "variants": [
+      {
+        "name": "Black",
+        "caseColorHex": "#1f1f1f"
+      },
+      {
+        "name": "Salt White Blue",
+        "caseColorHex": "#cfe2f3"
+      },
+      {
+        "name": "Glacial Blue",
+        "caseColorHex": "#7fb3e0"
+      },
+      {
+        "name": "Mocha Brown",
+        "caseColorHex": "#7a5a45"
+      },
+      {
+        "name": "Purple Gradient",
+        "caseColorHex": "#8e6cc4"
+      }
+    ],
+    "features": [
+      {
+        "type": "knob",
+        "position": "top-right"
+      }
+    ],
+    "wireless": true,
+    "priceUsd": 63.99,
+    "availability": "unknown",
+    "storeUrl": "https://epomaker.com/ru/products/epomaker-aula-f75",
+    "affiliateUrl": "",
+    "imageUrl": null,
+    "sourceUrl": "https://epomaker.com/ru/products/epomaker-aula-f75",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "sale price; regular $79.99",
+      "which colors Epomaker stocks"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "akko-5075b-plus",
+    "name": "5075B Plus",
+    "brand": "Akko",
+    "layout": "75%",
+    "dimensionsMm": {
+      "length": 335,
+      "width": 146,
+      "height": 42
+    },
+    "caseShape": "standard",
+    "variants": [
+      {
+        "name": "Black & Silver",
+        "caseColorHex": "#2b2b2b"
+      },
+      {
+        "name": "Dracula Castle",
+        "caseColorHex": "#5a2a6e"
+      },
+      {
+        "name": "Black & Cyan",
+        "caseColorHex": "#1f1f1f"
+      },
+      {
+        "name": "Horizon",
+        "caseColorHex": "#3b5b8c"
+      }
+    ],
+    "features": [
+      {
+        "type": "knob",
+        "position": "top-right"
+      }
+    ],
+    "wireless": true,
+    "priceUsd": 85.99,
+    "availability": "unknown",
+    "storeUrl": "https://www.newegg.com/akko-wired-computer-keyboard-5075b-plus-usb-c/p/0GA-02S8-00092",
+    "affiliateUrl": "",
+    "imageUrl": null,
+    "sourceUrl": "https://computerlounge.co.nz/products/akko-5075b-plus-dracula-castle-75-rgb-wireless-mechanical-keyboard-cream-blue-switch",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "price is Newegg's for one variant",
+      "stock status"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "monsgeek-m1-v5",
+    "name": "M1 V5 VIA",
+    "brand": "MonsGeek",
+    "layout": "75%",
+    "dimensionsMm": {
+      "length": 333,
+      "width": 146,
+      "height": 33
+    },
+    "caseShape": "standard",
+    "variants": [
+      {
+        "name": "Black",
+        "caseColorHex": "#1f1f1f"
+      },
+      {
+        "name": "Dark Night",
+        "caseColorHex": "#2c3440"
+      }
+    ],
+    "features": [
+      {
+        "type": "knob",
+        "position": "top-right"
+      }
+    ],
+    "wireless": true,
+    "priceUsd": 89.99,
+    "availability": "unknown",
+    "storeUrl": "https://www.monsgeek.com/product/monsgeek-m1-v5-via-recycling-mechanical-keyboard",
+    "affiliateUrl": "",
+    "imageUrl": null,
+    "sourceUrl": "https://keeb-finder.com/keyboards/monsgeek-m1-v5-via-ansi",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "$89.99 is a sale on the Recycling edition; regular $119.99",
+      "colors"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "wooting-60he-plus",
+    "name": "60HE+",
+    "brand": "Wooting",
+    "layout": "60%",
+    "dimensionsMm": {
+      "length": 302,
+      "width": 116,
+      "height": 38
+    },
+    "caseShape": "standard",
+    "variants": [
+      {
+        "name": "Black",
+        "caseColorHex": "#1c1c1c"
+      }
+    ],
+    "features": [],
+    "wireless": false,
+    "priceUsd": 175.0,
+    "availability": "unknown",
+    "storeUrl": "https://wooting.io/product/wooting-60he",
+    "affiliateUrl": "",
+    "imageUrl": null,
+    "sourceUrl": "https://wooting.io/product/wooting-60he",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "price from a review, check wooting.io",
+      "wired only"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "ducky-one-3-sf",
+    "name": "One 3 SF",
+    "brand": "Ducky",
+    "layout": "65%",
+    "dimensionsMm": {
+      "length": 335,
+      "width": 110,
+      "height": 40
+    },
+    "caseShape": "standard",
+    "variants": [
+      {
+        "name": "Daybreak",
+        "caseColorHex": "#4a6fa5"
+      },
+      {
+        "name": "Fuji",
+        "caseColorHex": "#e9e4dc"
+      },
+      {
+        "name": "Yellow",
+        "caseColorHex": "#f2c230"
+      },
+      {
+        "name": "Matcha",
+        "caseColorHex": "#a3b86c"
+      },
+      {
+        "name": "Cosmic Blue",
+        "caseColorHex": "#2d3a8c"
+      },
+      {
+        "name": "Classic Black",
+        "caseColorHex": "#1c1c1c"
+      },
+      {
+        "name": "Pure White",
+        "caseColorHex": "#f4f4f4"
+      }
+    ],
+    "features": [],
+    "wireless": false,
+    "priceUsd": null,
+    "availability": "unknown",
+    "storeUrl": null,
+    "affiliateUrl": "",
+    "imageUrl": null,
+    "sourceUrl": "https://www.memoryexpress.com/Products/MX00125543",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "no US price found",
+      "choose a US store link",
+      "wired only"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "rk61",
+    "name": "RK61",
+    "brand": "Royal Kludge",
+    "layout": "60%",
+    "dimensionsMm": {
+      "length": 291,
+      "width": 101,
+      "height": 40
+    },
+    "caseShape": "standard",
+    "variants": [
+      {
+        "name": "Black",
+        "caseColorHex": "#1c1c1c"
+      },
+      {
+        "name": "White",
+        "caseColorHex": "#f2f2f2"
+      }
+    ],
+    "features": [],
+    "wireless": true,
+    "priceUsd": 54.99,
+    "availability": "unknown",
+    "storeUrl": null,
+    "affiliateUrl": "",
+    "imageUrl": null,
+    "sourceUrl": "https://www.highgroundgaming.com/royal-kludge-rk61-mechanical-keyboard-review/",
+    "checkedOn": "2026-11-16",
+    "colorsApprox": true,
+    "needsCheck": [
+      "price is from a 2020 review",
+      "choose a store link (Amazon)"
+    ],
+    "notes": ""
+  }
+]
