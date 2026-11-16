@@ -22,7 +22,7 @@
 </svelte:head>
 
 <main>
-	<h1>Hello from SvelteKit + Svelte 5</h1>
+	<h1>Hello this is my new journey</h1>
 
 	<section>
 		<h2>Counter</h2>
