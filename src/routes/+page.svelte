@@ -24,6 +24,7 @@
 <main>
 	<h1>Hello this is my new journey</h1>
 	<p><a href="/catalog">Browse the keyboard catalog →</a></p>
+	<p><a href="/match">Try the match tester →</a></p>
 
 	<section>
 		<h2>Counter</h2>
