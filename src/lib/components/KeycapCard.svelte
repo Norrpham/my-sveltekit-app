@@ -7,16 +7,31 @@
 
 	// A tiny row of keys drawn in the set's colors (no copied artwork).
 	const sampleKeys = ['Esc', 'Q', 'W', 'E', 'R', 'T'];
+
+	// How bright a #rrggbb color looks (0 = black, 1 = white).
+	function brightness(hex: string): number {
+		const n = parseInt(hex.slice(1), 16);
+		return (0.299 * ((n >> 16) & 255) + 0.587 * ((n >> 8) & 255) + 0.114 * (n & 255)) / 255;
+	}
+
+	// Pick the set color (legend or base) that stands out most on this key,
+	// so letters never disappear when a key's color matches the legend color.
+	function readableOn(bg: string): string {
+		const { legend, base } = keycap.colors;
+		const gap = (c: string) => Math.abs(brightness(c) - brightness(bg));
+		return gap(legend) >= gap(base) ? legend : base;
+	}
 </script>
 
 <article class="card">
 	<div class="keys" style:background={keycap.colors.base}>
 		{#each sampleKeys as label, i (label)}
 			{@const novelty = keycap.noveltyKeys.find((n) => n.key === label)}
+			{@const bg = novelty?.color ?? (i === 0 ? keycap.colors.accent : keycap.colors.base)}
 			<span
 				class="key"
-				style:background={novelty?.color ?? (i === 0 ? keycap.colors.accent : keycap.colors.base)}
-				style:color={keycap.colors.legend}
+				style:background={bg}
+				style:color={readableOn(bg)}
 				title={novelty ? `${label}: ${novelty.shape}` : label}>{label}</span
 			>
 		{/each}

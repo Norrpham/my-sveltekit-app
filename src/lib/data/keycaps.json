@@ -16,7 +16,7 @@
     },
     "noveltyKeys": [],
     "profile": "Cherry",
-    "keyCount": 219,
+    "keyCount": 218,
     "fitsLayouts": [
       "60%",
       "65%",
@@ -27,13 +27,13 @@
     "officiallyLicensed": null,
     "priceUsd": 40.99,
     "availability": "unknown",
-    "storeUrl": "https://www.keychron.com/collections/add-on-for-q2-plate/products/cherry-profile-double-shot-pbt-full-set-keycaps-dolch-pink",
+    "storeUrl": "https://www.keychron.com/products/cherry-profile-double-shot-pbt-full-set-keycaps-dolch-pink",
     "affiliateUrl": "",
-    "sourceUrl": "https://www.keychron.com/collections/add-on-for-q2-plate/products/cherry-profile-double-shot-pbt-full-set-keycaps-dolch-pink",
+    "sourceUrl": "https://www.keychron.com/products/cherry-profile-double-shot-pbt-full-set-keycaps-dolch-pink",
     "checkedOn": "2026-11-16",
     "colorsApprox": true,
     "needsCheck": [
-      "stock status (some Keychron sets show sold out)"
+      "stock status"
     ]
   },
   {
@@ -53,7 +53,7 @@
     },
     "noveltyKeys": [],
     "profile": "Cherry",
-    "keyCount": 219,
+    "keyCount": 218,
     "fitsLayouts": [
       "60%",
       "65%",
@@ -63,15 +63,13 @@
     "lowProfile": false,
     "officiallyLicensed": null,
     "priceUsd": 39.99,
-    "availability": "unknown",
-    "storeUrl": "https://www.keychron.com/collections/keycaps-for-q65-max",
+    "availability": "backordered",
+    "storeUrl": "https://www.keychron.com/products/double-shot-pbt-cherry-full-set-keycap-set-grey-white-and-blue",
     "affiliateUrl": "",
-    "sourceUrl": "https://www.keychron.com/collections/keycaps-for-q65-max",
+    "sourceUrl": "https://www.keychron.com/products/double-shot-pbt-cherry-full-set-keycap-set-grey-white-and-blue",
     "checkedOn": "2026-11-16",
     "colorsApprox": true,
-    "needsCheck": [
-      "stock status"
-    ]
+    "needsCheck": []
   },
   {
     "id": "keychron-player",
@@ -90,7 +88,7 @@
     },
     "noveltyKeys": [],
     "profile": "Cherry",
-    "keyCount": 219,
+    "keyCount": 218,
     "fitsLayouts": [
       "60%",
       "65%",
@@ -101,14 +99,13 @@
     "officiallyLicensed": null,
     "priceUsd": 39.99,
     "availability": "unknown",
-    "storeUrl": "https://www.keychron.com/collections/keycaps-for-q65-max",
+    "storeUrl": "https://www.keychron.com/products/cherry-profile-double-shot-pbt-full-set-keycaps-player",
     "affiliateUrl": "",
-    "sourceUrl": "https://www.keychron.com/collections/keycaps-for-q65-max",
+    "sourceUrl": "https://www.keychron.com/products/cherry-profile-double-shot-pbt-full-set-keycaps-player",
     "checkedOn": "2026-11-16",
     "colorsApprox": true,
     "needsCheck": [
-      "stock status",
-      "accent colors"
+      "stock status"
     ]
   },
   {
@@ -128,7 +125,7 @@
     },
     "noveltyKeys": [],
     "profile": "Cherry",
-    "keyCount": 219,
+    "keyCount": 218,
     "fitsLayouts": [
       "60%",
       "65%",
@@ -139,9 +136,9 @@
     "officiallyLicensed": null,
     "priceUsd": 39.99,
     "availability": "unknown",
-    "storeUrl": "https://www.keychron.com/collections/keycaps-for-q65-max",
+    "storeUrl": "https://www.keychron.com/products/cherry-profile-double-shot-pbt-full-set-keycaps-black-on-white-bow",
     "affiliateUrl": "",
-    "sourceUrl": "https://www.keychron.com/collections/keycaps-for-q65-max",
+    "sourceUrl": "https://www.keychron.com/products/cherry-profile-double-shot-pbt-full-set-keycaps-black-on-white-bow",
     "checkedOn": "2026-11-16",
     "colorsApprox": true,
     "needsCheck": [
@@ -165,7 +162,7 @@
     },
     "noveltyKeys": [],
     "profile": "Cherry",
-    "keyCount": 219,
+    "keyCount": 218,
     "fitsLayouts": [
       "60%",
       "65%",
@@ -176,9 +173,9 @@
     "officiallyLicensed": null,
     "priceUsd": 39.99,
     "availability": "unknown",
-    "storeUrl": "https://www.keychron.com/collections/keycaps-for-q6?page=2",
+    "storeUrl": "https://www.keychron.com/products/cherry-profile-double-shot-pbt-full-set-keycaps-white-on-black-wob",
     "affiliateUrl": "",
-    "sourceUrl": "https://www.keychron.com/collections/keycaps-for-q6?page=2",
+    "sourceUrl": "https://www.keychron.com/products/cherry-profile-double-shot-pbt-full-set-keycaps-white-on-black-wob",
     "checkedOn": "2026-11-16",
     "colorsApprox": true,
     "needsCheck": [
@@ -202,7 +199,7 @@
     },
     "noveltyKeys": [],
     "profile": "Cherry",
-    "keyCount": 219,
+    "keyCount": 218,
     "fitsLayouts": [
       "60%",
       "65%",
@@ -212,16 +209,13 @@
     "lowProfile": false,
     "officiallyLicensed": null,
     "priceUsd": 39.99,
-    "availability": "unknown",
-    "storeUrl": "https://www.zenoxstore.com/en-tw/collections/diy-keyboard-workshop-keycaps-selection",
+    "availability": "backordered",
+    "storeUrl": "https://www.keychron.com/products/double-shot-pbt-cherry-full-set-keycap-set-hacker",
     "affiliateUrl": "",
-    "sourceUrl": "https://www.zenoxstore.com/en-tw/collections/diy-keyboard-workshop-keycaps-selection",
+    "sourceUrl": "https://www.keychron.com/products/double-shot-pbt-cherry-full-set-keycap-set-hacker",
     "checkedOn": "2026-11-16",
     "colorsApprox": true,
-    "needsCheck": [
-      "price is Keychron's usual $39.99; confirm",
-      "US store link"
-    ]
+    "needsCheck": []
   },
   {
     "id": "keychron-camel",
@@ -240,7 +234,7 @@
     },
     "noveltyKeys": [],
     "profile": "Cherry",
-    "keyCount": 219,
+    "keyCount": 218,
     "fitsLayouts": [
       "60%",
       "65%",
@@ -251,9 +245,9 @@
     "officiallyLicensed": null,
     "priceUsd": 39.99,
     "availability": "unknown",
-    "storeUrl": "https://www.keychron.com/collections/keycaps-for-q6?page=2",
+    "storeUrl": "https://www.keychron.com/products/cherry-profile-double-shot-pbt-full-set-keycaps-camel",
     "affiliateUrl": "",
-    "sourceUrl": "https://www.keychron.com/collections/keycaps-for-q6?page=2",
+    "sourceUrl": "https://www.keychron.com/products/cherry-profile-double-shot-pbt-full-set-keycaps-camel",
     "checkedOn": "2026-11-16",
     "colorsApprox": true,
     "needsCheck": [
@@ -276,9 +270,8 @@
     },
     "noveltyKeys": [],
     "profile": "Cherry",
-    "keyCount": null,
+    "keyCount": 140,
     "fitsLayouts": [
-      "60%",
       "65%",
       "70%",
       "75%"
@@ -287,13 +280,14 @@
     "officiallyLicensed": null,
     "priceUsd": 39.99,
     "availability": "unknown",
-    "storeUrl": "https://www.keychron.com/collections/keycaps-for-q8?page=5",
+    "storeUrl": "https://www.keychron.com/products/blue-planet-cherry-profile-dye-sub-pbt-full-keycap-set",
     "affiliateUrl": "",
-    "sourceUrl": "https://www.keychron.com/collections/keycaps-for-q8?page=5",
+    "sourceUrl": "https://www.keychron.com/products/blue-planet-cherry-profile-dye-sub-pbt-full-keycap-set",
     "checkedOn": "2026-11-16",
     "colorsApprox": true,
     "needsCheck": [
-      "key count and layout fit (assumed full set)"
+      "stock status",
+      "60% fit not listed by Keychron"
     ]
   },
   {
@@ -313,9 +307,8 @@
     },
     "noveltyKeys": [],
     "profile": "Cherry",
-    "keyCount": null,
+    "keyCount": 140,
     "fitsLayouts": [
-      "60%",
       "65%",
       "70%",
       "75%"
@@ -324,13 +317,14 @@
     "officiallyLicensed": null,
     "priceUsd": 39.99,
     "availability": "unknown",
-    "storeUrl": "https://www.keychron.com/collections/keycaps-for-q8?page=5",
+    "storeUrl": "https://www.keychron.com/products/cloud-and-snow-cherry-profile-dye-sub-pbt-full-keycap-set",
     "affiliateUrl": "",
-    "sourceUrl": "https://www.keychron.com/collections/keycaps-for-q8?page=5",
+    "sourceUrl": "https://www.keychron.com/products/cloud-and-snow-cherry-profile-dye-sub-pbt-full-keycap-set",
     "checkedOn": "2026-11-16",
     "colorsApprox": true,
     "needsCheck": [
-      "key count and layout fit (assumed full set)"
+      "stock status",
+      "60% fit not listed by Keychron"
     ]
   },
   {
@@ -345,34 +339,34 @@
     ],
     "colors": {
       "base": "#2a2d33",
-      "legend": "#ffffff",
-      "accent": "#2a2d33"
+      "legend": "#8fd19e",
+      "accent": "#3a3f47"
     },
     "noveltyKeys": [],
     "profile": "unknown",
-    "keyCount": null,
+    "keyCount": 130,
     "fitsLayouts": [
+      "65%",
       "75%"
     ],
     "lowProfile": false,
     "officiallyLicensed": null,
-    "priceUsd": 19.0,
+    "priceUsd": 149.0,
     "availability": "unknown",
-    "storeUrl": "https://store.angrymiao.com/pages/cyberboard-r4-graffiti-landing",
+    "storeUrl": "https://store.angrymiao.com/products/keycapset-glacier",
     "affiliateUrl": "",
-    "sourceUrl": "https://store.angrymiao.com/pages/cyberboard-r4-graffiti-landing",
+    "sourceUrl": "https://store.angrymiao.com/products/keycapset-glacier",
     "checkedOn": "2026-11-16",
     "colorsApprox": true,
     "needsCheck": [
-      "layouts it fits",
       "profile",
-      "price is 'from $19'"
+      "stock status"
     ]
   },
   {
-    "id": "ds-nezuko-licensed",
-    "name": "Demon Slayer Nezuko full-art",
-    "brand": "Demon Slayer (licensed)",
+    "id": "ds-nezuko",
+    "name": "Demon Slayer Nezuko (fan-made)",
+    "brand": "Kawaii Keycaps (seller)",
     "theme": "anime",
     "tags": [
       "demon slayer",
@@ -400,7 +394,7 @@
     ],
     "lowProfile": false,
     "officiallyLicensed": false,
-    "priceUsd": 23.50,
+    "priceUsd": 23.5,
     "availability": "unknown",
     "storeUrl": "https://kawaiikeycaps.com/product/demon-slayer-nezuko-keycap/",
     "affiliateUrl": "",
@@ -408,15 +402,13 @@
     "checkedOn": "2026-11-16",
     "colorsApprox": true,
     "needsCheck": [
-      "price",
-      "key count / layout fit",
-      "seller"
+      "price, key count and stock not re-checked on 2026-11-16 (page could not be opened)"
     ]
   },
   {
-    "id": "ds-inosuke-licensed",
+    "id": "ds-inosuke",
     "name": "Demon Slayer Inosuke",
-    "brand": "Demon Slayer (licensed)",
+    "brand": "Team Liquid",
     "theme": "anime",
     "tags": [
       "demon slayer",
@@ -438,7 +430,7 @@
     ],
     "lowProfile": false,
     "officiallyLicensed": true,
-    "priceUsd": 65.00,
+    "priceUsd": 65.0,
     "availability": "unknown",
     "storeUrl": "https://store.teamliquid.com/products/lxds0003-blu-blue-inosuke-keycap-set",
     "affiliateUrl": "",
@@ -447,8 +439,7 @@
     "colorsApprox": true,
     "needsCheck": [
       "price",
-      "layout fit",
-      "find a US store"
+      "layout fit"
     ]
   },
   {
@@ -517,7 +508,7 @@
     ],
     "lowProfile": false,
     "officiallyLicensed": false,
-    "priceUsd": 40.99 ,
+    "priceUsd": 40.99,
     "availability": "unknown",
     "storeUrl": "https://www.amazon.com/dp/B0B1C7FGBS",
     "affiliateUrl": "",
@@ -543,7 +534,7 @@
     "colors": {
       "base": "#5b3a8c",
       "legend": "#9be04a",
-      "accent": "#9be04a"
+      "accent": "#f08a24"
     },
     "noveltyKeys": [],
     "profile": "ASA",
@@ -563,7 +554,7 @@
     "checkedOn": "2026-11-16",
     "colorsApprox": true,
     "needsCheck": [
-      "price ($49 at a NZ store, sale)",
+      "price (sold out at Akko EU; $60.43 is a third-party store)",
       "layout fit"
     ]
   },
@@ -592,7 +583,7 @@
     ],
     "lowProfile": false,
     "officiallyLicensed": true,
-    "priceUsd": 79.00,
+    "priceUsd": 79.0,
     "availability": "unknown",
     "storeUrl": "https://akkogear.eu/products/spy-family-keycap-set",
     "affiliateUrl": "",
@@ -630,7 +621,7 @@
     ],
     "lowProfile": false,
     "officiallyLicensed": false,
-    "priceUsd": 39.50,
+    "priceUsd": 39.5,
     "availability": "unknown",
     "storeUrl": "https://kawaiikeycaps.com/product/knights-of-the-zodiac-jda-keycapset/",
     "affiliateUrl": "",
@@ -759,16 +750,15 @@
     ],
     "lowProfile": false,
     "officiallyLicensed": true,
-    "priceUsd": 32.80,
+    "priceUsd": 59.99,
     "availability": "unknown",
-    "storeUrl": "https://fantechworld.com/products/ac03-keycaps-one-piece-edition",
+    "storeUrl": "https://www.newegg.com/p/173-01CZ-000J0",
     "affiliateUrl": "",
-    "sourceUrl": "https://fantechworld.com/products/ac03-keycaps-one-piece-edition",
+    "sourceUrl": "https://www.newegg.com/p/173-01CZ-000J0",
     "checkedOn": "2026-11-16",
     "colorsApprox": true,
     "needsCheck": [
-      "US price and store",
-      "colors per character"
+      "$59.99 seen on the Nami listing; Luffy may differ"
     ]
   }
 ]
