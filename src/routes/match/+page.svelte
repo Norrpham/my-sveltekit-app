@@ -74,8 +74,8 @@
 	<p><a href="/">← Home</a> · <a href="/catalog">Catalog</a></p>
 	<h1>Match tester</h1>
 	<p class="lead">
-		Fill in what someone wants and see which real keyboard + keycap combo the matcher picks. Blank
-		fields mean "don't care". Later, the AI will fill these in from plain words.
+		Describe a keyboard in your own words and let the AI fill in the fields, or set them by hand.
+		Blank fields mean "don't care". The matcher then picks real keyboard + keycap combos.
 	</p>
 
 	<form class="wish" onsubmit={askAi}>
