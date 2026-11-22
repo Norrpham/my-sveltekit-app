@@ -72,7 +72,7 @@
 		height: 380px;
 		border-radius: 12px;
 		overflow: hidden;
-		background: radial-gradient(circle at 50% 40%, #fafafa, #e6e6e6);
+		background: radial-gradient(circle at 50% 35%, #2a3658, #0d1426 75%);
 	}
 	.controls {
 		position: absolute;
@@ -82,14 +82,15 @@
 		gap: 0.75rem;
 		align-items: center;
 		font-size: 0.8rem;
-		color: #555;
+		color: var(--muted);
 	}
 	.controls button {
 		font: inherit;
 		padding: 0.3rem 0.7rem;
 		border-radius: 6px;
-		border: 1px solid #ccc;
-		background: #fff;
+		border: 1px solid var(--line);
+		background: var(--panel-2);
+		color: var(--text);
 		cursor: pointer;
 	}
 	.note {
@@ -98,6 +99,6 @@
 		bottom: 0.4rem;
 		margin: 0;
 		font-size: 0.72rem;
-		color: #777;
+		color: var(--muted);
 	}
 </style>

@@ -58,7 +58,8 @@
 
 <style>
 	.card {
-		border: 1px solid #ddd;
+		border: 1px solid var(--line);
+		background: var(--panel);
 		border-radius: 12px;
 		padding: 1rem;
 		display: flex;
@@ -70,7 +71,7 @@
 		gap: 4px;
 		padding: 8px;
 		border-radius: 8px;
-		border: 1px solid #0001;
+		border: 1px solid #fff2;
 	}
 	.key {
 		flex: 1;
@@ -88,7 +89,7 @@
 	}
 	.brand {
 		margin: 0;
-		color: #666;
+		color: var(--muted);
 		font-size: 0.85rem;
 	}
 	.facts {
@@ -101,7 +102,7 @@
 	}
 	.facts li {
 		font-size: 0.75rem;
-		background: #f3f3f3;
+		background: var(--panel-2);
 		border-radius: 6px;
 		padding: 0.1rem 0.45rem;
 	}

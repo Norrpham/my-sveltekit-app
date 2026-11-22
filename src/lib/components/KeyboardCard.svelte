@@ -49,7 +49,8 @@
 
 <style>
 	.card {
-		border: 1px solid #ddd;
+		border: 1px solid var(--line);
+		background: var(--panel);
 		border-radius: 12px;
 		padding: 1rem;
 		display: flex;
@@ -59,7 +60,7 @@
 	.preview {
 		height: 72px;
 		border-radius: 8px;
-		border: 1px solid #0001;
+		border: 1px solid #fff2;
 	}
 	h3 {
 		margin: 0;
@@ -68,7 +69,7 @@
 	.brand,
 	.variant-name {
 		margin: 0;
-		color: #666;
+		color: var(--muted);
 		font-size: 0.85rem;
 	}
 	.swatches {
@@ -80,12 +81,12 @@
 		width: 22px;
 		height: 22px;
 		border-radius: 50%;
-		border: 1px solid #0003;
+		border: 1px solid #fff4;
 		cursor: pointer;
 		padding: 0;
 	}
 	.swatch.active {
-		outline: 2px solid #333;
+		outline: 2px solid #fff;
 		outline-offset: 2px;
 	}
 	.facts {
@@ -98,7 +99,7 @@
 	}
 	.facts li {
 		font-size: 0.75rem;
-		background: #f3f3f3;
+		background: var(--panel-2);
 		border-radius: 6px;
 		padding: 0.1rem 0.45rem;
 	}

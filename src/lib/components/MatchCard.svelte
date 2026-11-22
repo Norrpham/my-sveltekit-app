@@ -69,7 +69,8 @@
 
 <style>
 	.card {
-		border: 1px solid #ddd;
+		border: 1px solid var(--line);
+		background: var(--panel);
 		border-radius: 12px;
 		padding: 1rem;
 		display: flex;
@@ -77,10 +78,10 @@
 		gap: 0.6rem;
 	}
 	.card.top {
-		border: 2px solid #333;
+		border: 2px solid #8ea2ff;
 	}
 	.card.selected {
-		box-shadow: 0 0 0 3px #4a78c2;
+		box-shadow: 0 0 0 3px var(--blue);
 	}
 	.head {
 		display: flex;
@@ -92,14 +93,15 @@
 		font-size: 0.75rem;
 		padding: 0.25rem 0.6rem;
 		border-radius: 6px;
-		border: 1px solid #ccc;
-		background: #fff;
+		border: 1px solid var(--line);
+		background: var(--panel-2);
+		color: var(--text);
 		cursor: pointer;
 	}
 	.preview:disabled {
-		background: #eef3fb;
-		border-color: #4a78c2;
-		color: #2c4f8a;
+		background: var(--blue);
+		border-color: var(--blue);
+		color: #fff;
 		cursor: default;
 	}
 	.rank {
@@ -107,7 +109,7 @@
 		font-size: 0.75rem;
 		text-transform: uppercase;
 		letter-spacing: 0.05em;
-		color: #666;
+		color: var(--muted);
 	}
 	.combo {
 		display: flex;
@@ -129,7 +131,7 @@
 		width: 40px;
 		height: 40px;
 		border-radius: 8px;
-		border: 1px solid #0002;
+		border: 1px solid #fff3;
 	}
 	.swatch.keys {
 		display: grid;
@@ -138,7 +140,7 @@
 	}
 	.sub {
 		font-size: 0.8rem;
-		color: #666;
+		color: var(--muted);
 	}
 	.row {
 		display: flex;
@@ -156,9 +158,9 @@
 		font-size: 0.85rem;
 	}
 	.good {
-		color: #1d6b34;
+		color: var(--good);
 	}
 	.bad {
-		color: #9b1c1c;
+		color: var(--bad);
 	}
 </style>
