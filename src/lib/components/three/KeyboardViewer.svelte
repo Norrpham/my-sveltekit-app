@@ -12,13 +12,16 @@
 
 	// Fit the camera to the window: wide screens can get closer than phones.
 	const FOV = 32;
-	const HEIGHT = 380;
 	let width = $state(800);
+	// Shorter window on phones, taller on desktop.
+	let height = $derived(width < 600 ? 300 : 420);
 	let distance = $derived.by(() => {
-		const aspect = Math.max(width, 1) / HEIGHT;
+		const aspect = Math.max(width, 1) / height;
 		const halfV = ((FOV / 2) * Math.PI) / 180;
 		const halfH = Math.atan(Math.tan(halfV) * aspect);
-		const fitWidth = 6.4; // a 75% board is ~3.4 units wide; extra room so corners stay in view while it spins
+		// A 75% board is ~3.4 units wide. Wide screens leave extra room so the board
+		// stays in frame while it spins; narrow (phone) screens fit it more tightly.
+		const fitWidth = aspect < 1.4 ? 4.2 : 6.2;
 		return Math.max(3, fitWidth / 2 / Math.tan(halfH));
 	});
 	// Look from in front and a bit above.
@@ -28,6 +31,7 @@
 <!-- Stop the auto-spin as soon as someone grabs the model (not when they click the button). -->
 <div
 	class="viewer"
+	style:height="{height}px"
 	role="presentation"
 	bind:clientWidth={width}
 	onpointerdown={(e) => {
@@ -62,14 +66,13 @@
 		</button>
 		<span>Drag to rotate</span>
 	</div>
-	<p class="note">Preview only: shape, size and colors are approximate. Check the store photos.</p>
 </div>
+<p class="note">Preview only: shape, size and colors are approximate. Check the store photos.</p>
 
 <style>
 	.viewer {
 		position: relative;
 		width: 100%;
-		height: 380px;
 		border-radius: 12px;
 		overflow: hidden;
 		background: radial-gradient(circle at 50% 35%, #2a3658, #0d1426 75%);
@@ -77,7 +80,7 @@
 	.controls {
 		position: absolute;
 		left: 0.75rem;
-		bottom: 2rem;
+		bottom: 0.75rem;
 		display: flex;
 		gap: 0.75rem;
 		align-items: center;
@@ -94,10 +97,7 @@
 		cursor: pointer;
 	}
 	.note {
-		position: absolute;
-		left: 0.75rem;
-		bottom: 0.4rem;
-		margin: 0;
+		margin: 0.4rem 0 0;
 		font-size: 0.72rem;
 		color: var(--muted);
 	}

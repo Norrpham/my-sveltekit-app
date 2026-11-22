@@ -322,7 +322,7 @@
 		margin-bottom: 1.25rem;
 	}
 	.placeholder {
-		height: 380px;
+		height: 420px;
 		display: grid;
 		place-items: center;
 		border-radius: var(--radius);
