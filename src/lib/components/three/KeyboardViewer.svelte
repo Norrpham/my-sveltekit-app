@@ -41,8 +41,7 @@
 				autoRotateSpeed={1.6}
 				enableDamping
 				enablePan={false}
-				minDistance={2}
-				maxDistance={8}
+				enableZoom={false}
 				maxPolarAngle={Math.PI * 0.85}
 			/>
 		</T.PerspectiveCamera>
@@ -61,7 +60,7 @@
 		<button type="button" onclick={() => (spinning = !spinning)}>
 			{spinning ? 'Pause spin' : 'Spin'}
 		</button>
-		<span>Drag to rotate · scroll to zoom</span>
+		<span>Drag to rotate</span>
 	</div>
 	<p class="note">Preview only: shape, size and colors are approximate. Check the store photos.</p>
 </div>
