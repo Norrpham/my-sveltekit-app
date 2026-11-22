@@ -3,11 +3,23 @@
 	import { buyLink, formatPrice } from '../products';
 	import type { Match } from '../matching';
 
-	let { match, rank }: { match: Match; rank: number } = $props();
+	let {
+		match,
+		rank,
+		selected = false,
+		onpreview
+	}: { match: Match; rank: number; selected?: boolean; onpreview?: () => void } = $props();
 </script>
 
-<article class="card" class:top={rank === 1}>
-	<p class="rank">{rank === 1 ? 'Best match' : `Alternative ${rank - 1}`}</p>
+<article class="card" class:top={rank === 1} class:selected>
+	<div class="head">
+		<p class="rank">{rank === 1 ? 'Best match' : `Alternative ${rank - 1}`}</p>
+		{#if onpreview}
+			<button type="button" class="preview" onclick={onpreview} disabled={selected}>
+				{selected ? 'Showing in 3D' : 'View in 3D'}
+			</button>
+		{/if}
+	</div>
 
 	<div class="combo">
 		<div class="part">
@@ -66,6 +78,29 @@
 	}
 	.card.top {
 		border: 2px solid #333;
+	}
+	.card.selected {
+		box-shadow: 0 0 0 3px #4a78c2;
+	}
+	.head {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.preview {
+		font: inherit;
+		font-size: 0.75rem;
+		padding: 0.25rem 0.6rem;
+		border-radius: 6px;
+		border: 1px solid #ccc;
+		background: #fff;
+		cursor: pointer;
+	}
+	.preview:disabled {
+		background: #eef3fb;
+		border-color: #4a78c2;
+		color: #2c4f8a;
+		cursor: default;
 	}
 	.rank {
 		margin: 0;

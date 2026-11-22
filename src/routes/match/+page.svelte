@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { onMount, type Component } from 'svelte';
 	import MatchCard from '../../lib/components/MatchCard.svelte';
 	import { colorFamilies } from '../../lib/colors';
 	import { findMatches, type Spec } from '../../lib/matching';
@@ -28,6 +29,22 @@
 
 	// Re-runs automatically whenever any field above changes.
 	let results = $derived(findMatches(spec, keyboards, keycaps));
+
+	// Which result is shown in 3D. Falls back to the best match when results change.
+	const idOf = (m: (typeof results)[number]) => m.keyboard.id + '+' + m.keycap.id;
+	let previewId = $state('');
+	let previewed = $derived(results.find((m) => idOf(m) === previewId) ?? results[0]);
+
+	// The 3D viewer (three.js) is big, so load it only in the browser, after the page shows.
+	let Viewer = $state<Component<any> | null>(null);
+	let viewerFailed = $state(false);
+	onMount(async () => {
+		try {
+			Viewer = (await import('../../lib/components/three/KeyboardViewer.svelte')).default;
+		} catch {
+			viewerFailed = true;
+		}
+	});
 
 	// Phase 4: plain words → AI → spec → the form above.
 	let wish = $state('I want a demon slayer keycap keyboard with the base is blue 70%');
@@ -140,9 +157,29 @@
 		<pre>{JSON.stringify(spec, null, 2)}</pre>
 	</details>
 
+	{#if previewed}
+		<section class="preview3d" aria-label="3D preview">
+			{#if Viewer}
+				<Viewer keyboard={previewed.keyboard} variant={previewed.variant} keycap={previewed.keycap} />
+			{:else}
+				<div class="placeholder">
+					{viewerFailed ? "The 3D preview couldn't load on this device." : 'Loading 3D preview…'}
+				</div>
+			{/if}
+			<p class="caption">
+				{previewed.keyboard.name} ({previewed.variant.name}) with {previewed.keycap.name} keycaps
+			</p>
+		</section>
+	{/if}
+
 	<section class="results">
-		{#each results as match, i (match.keyboard.id + match.keycap.id)}
-			<MatchCard {match} rank={i + 1} />
+		{#each results as match, i (idOf(match))}
+			<MatchCard
+				{match}
+				rank={i + 1}
+				selected={previewed !== undefined && idOf(previewed) === idOf(match)}
+				onpreview={() => (previewId = idOf(match))}
+			/>
 		{:else}
 			<p>No combos found.</p>
 		{/each}
@@ -232,6 +269,22 @@
 		padding: 0.75rem;
 		border-radius: 8px;
 		overflow-x: auto;
+	}
+	.preview3d {
+		margin-bottom: 1rem;
+	}
+	.placeholder {
+		height: 380px;
+		display: grid;
+		place-items: center;
+		border-radius: 12px;
+		background: #f0f0f0;
+		color: #777;
+	}
+	.caption {
+		margin: 0.4rem 0 0;
+		font-size: 0.85rem;
+		color: #555;
 	}
 	.results {
 		display: grid;
