@@ -32,11 +32,10 @@
 </script>
 
 <svelte:head>
-	<title>Catalog · Keyboard AI</title>
+	<title>Catalog · KeyCraze</title>
 </svelte:head>
 
 <main>
-	<p><a href="/">← Home</a></p>
 	<h1>Catalog</h1>
 	<p class="lead">
 		Every keyboard and keycap set the matcher can pick from. Colors are approximate; check the store
@@ -87,20 +86,16 @@
 		{/if}
 	</section>
 
-	<p class="disclosure">
-		Some links may be affiliate links: we may earn a commission if you buy, at no extra cost to you.
-	</p>
 </main>
 
 <style>
 	main {
 		max-width: 72rem;
-		margin: 2rem auto;
+		margin: 3rem auto 0;
 		padding: 0 1rem;
-		font-family: system-ui, sans-serif;
-	}
+			}
 	.lead {
-		color: #555;
+		color: var(--muted);
 	}
 	.filters {
 		display: flex;
@@ -108,7 +103,8 @@
 		flex-wrap: wrap;
 		align-items: end;
 		padding: 1rem;
-		background: #f7f7f7;
+		background: var(--panel);
+		border: 1px solid var(--line);
 		border-radius: 12px;
 	}
 	.filters label {
@@ -128,10 +124,5 @@
 	}
 	section {
 		margin-top: 2rem;
-	}
-	.disclosure {
-		margin-top: 3rem;
-		font-size: 0.8rem;
-		color: #777;
 	}
 </style>

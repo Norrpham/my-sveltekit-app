@@ -8,22 +8,36 @@ import type { RequestHandler } from './$types';
 
 const MAX_LENGTH = 500;
 
-// Simple per-visitor limit so one person can't burn through your AI credit.
-// (It resets when Vercel restarts the server; your OpenRouter spending limit
-// is the real safety net.)
-const WINDOW_MS = 60_000;
-const MAX_PER_WINDOW = 10;
+// Per-visitor limits so one person (or bot) can't burn through your AI credit:
+// at most 6 requests a minute and 40 a day. They reset if Vercel restarts the
+// server; your OpenRouter key's spending limit is the final safety net.
+const LIMITS = [
+	{ windowMs: 60_000, max: 6 },
+	{ windowMs: 24 * 60 * 60_000, max: 40 }
+];
 const recent = new Map<string, number[]>();
 
 function tooMany(ip: string): boolean {
 	const now = Date.now();
-	const times = (recent.get(ip) ?? []).filter((t) => now - t < WINDOW_MS);
-	times.push(now);
+	const day = LIMITS[1].windowMs;
+	const times = (recent.get(ip) ?? []).filter((t) => now - t < day);
+	const over = LIMITS.some(({ windowMs, max }) => times.filter((t) => now - t < windowMs).length >= max);
+	if (!over) times.push(now);
 	recent.set(ip, times);
-	return times.length > MAX_PER_WINDOW;
+	if (recent.size > 5000) recent.clear(); // keep memory small
+	return over;
 }
 
-export const POST: RequestHandler = async ({ request, getClientAddress }) => {
+/** Only accept requests sent by this website's own pages, not by other sites or scripts. */
+function fromOurSite(request: Request, url: URL): boolean {
+	const origin = request.headers.get('origin');
+	return origin !== null && origin === url.origin;
+}
+
+export const POST: RequestHandler = async ({ request, url, getClientAddress }) => {
+	if (!fromOurSite(request, url)) {
+		return json({ error: 'Requests must come from the KeyCraze website.' }, { status: 403 });
+	}
 	if (!OPENROUTER_API_KEY) {
 		return json({ error: 'The AI is not set up yet (no OpenRouter key).' }, { status: 503 });
 	}
@@ -36,7 +50,10 @@ export const POST: RequestHandler = async ({ request, getClientAddress }) => {
 	}
 
 	if (tooMany(getClientAddress())) {
-		return json({ error: 'Too many requests. Wait a minute and try again.' }, { status: 429 });
+		return json(
+			{ error: "You've asked a lot in a short time. Please wait a bit and try again." },
+			{ status: 429 }
+		);
 	}
 
 	try {

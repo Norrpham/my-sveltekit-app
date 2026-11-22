@@ -1,0 +1,114 @@
+/* KeyCraze theme: dark navy, bright blue buttons, white label tabs. */
+:root {
+	--bg: #0b1120;
+	--bg-2: #111a2e;
+	--panel: #172036;
+	--panel-2: #1d2843;
+	--line: #2b3756;
+	--text: #f3f5fa;
+	--muted: #a6b0c6;
+	--blue: #3b5bfd;
+	--blue-hover: #2c49e6;
+	--good: #4ade80;
+	--bad: #f87171;
+	--radius: 12px;
+	--font: 'Helvetica Neue', Helvetica, Arial, system-ui, sans-serif;
+	color-scheme: dark;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	background: var(--bg);
+	color: var(--text);
+	font-family: var(--font);
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+a {
+	color: #8ea2ff;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 400;
+	line-height: 1.15;
+}
+
+/* Blue pill button, like the Wix "Get a Quote" button. */
+.btn {
+	display: inline-block;
+	font: inherit;
+	font-size: 0.9rem;
+	padding: 0.65rem 1.4rem;
+	border-radius: 999px;
+	border: none;
+	background: var(--blue);
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+	transition: background 0.15s;
+}
+.btn:hover {
+	background: var(--blue-hover);
+}
+.btn:disabled {
+	opacity: 0.5;
+	cursor: default;
+}
+.btn.dark {
+	background: #1c2333;
+}
+.btn.dark:hover {
+	background: #273047;
+}
+.btn.small {
+	font-size: 0.78rem;
+	padding: 0.35rem 0.85rem;
+}
+
+/* White label tab, like "About KeyCraze" on Wix. */
+.tab {
+	display: inline-block;
+	background: #fff;
+	color: #0b1120;
+	font-weight: 600;
+	padding: 0.6rem 1.25rem;
+	border-radius: 4px;
+	margin: 0 0 1.5rem;
+	font-size: 1rem;
+}
+
+.wrap {
+	max-width: 72rem;
+	margin: 0 auto;
+	padding: 0 1.25rem;
+}
+
+input,
+select,
+textarea {
+	font: inherit;
+	color: var(--text);
+	background: var(--bg-2);
+	border: 1px solid var(--line);
+	border-radius: 8px;
+	padding: 0.45rem 0.6rem;
+}
+input::placeholder,
+textarea::placeholder {
+	color: #6f7a94;
+}
+:focus-visible {
+	outline: 2px solid #8ea2ff;
+	outline-offset: 2px;
+}
