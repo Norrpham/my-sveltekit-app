@@ -18,7 +18,7 @@
 		const aspect = Math.max(width, 1) / HEIGHT;
 		const halfV = ((FOV / 2) * Math.PI) / 180;
 		const halfH = Math.atan(Math.tan(halfV) * aspect);
-		const fitWidth = 3.9; // a 75% board is about 3.4 units wide, plus a margin
+		const fitWidth = 5.4; // a 75% board is ~3.4 units wide; extra room so corners stay in view while it spins
 		return Math.max(3, fitWidth / 2 / Math.tan(halfH));
 	});
 	// Look from in front and a bit above.
