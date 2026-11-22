@@ -18,7 +18,7 @@
 		const aspect = Math.max(width, 1) / HEIGHT;
 		const halfV = ((FOV / 2) * Math.PI) / 180;
 		const halfH = Math.atan(Math.tan(halfV) * aspect);
-		const fitWidth = 5.4; // a 75% board is ~3.4 units wide; extra room so corners stay in view while it spins
+		const fitWidth = 6.4; // a 75% board is ~3.4 units wide; extra room so corners stay in view while it spins
 		return Math.max(3, fitWidth / 2 / Math.tan(halfH));
 	});
 	// Look from in front and a bit above.
@@ -41,8 +41,7 @@
 				autoRotateSpeed={1.6}
 				enableDamping
 				enablePan={false}
-				minDistance={2}
-				maxDistance={8}
+				enableZoom={false}
 				maxPolarAngle={Math.PI * 0.85}
 			/>
 		</T.PerspectiveCamera>
@@ -61,7 +60,7 @@
 		<button type="button" onclick={() => (spinning = !spinning)}>
 			{spinning ? 'Pause spin' : 'Spin'}
 		</button>
-		<span>Drag to rotate · scroll to zoom</span>
+		<span>Drag to rotate</span>
 	</div>
 	<p class="note">Preview only: shape, size and colors are approximate. Check the store photos.</p>
 </div>
