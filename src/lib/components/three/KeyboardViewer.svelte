@@ -25,7 +25,15 @@
 	let camPos = $derived<[number, number, number]>([0, distance * 0.55, distance * 0.83]);
 </script>
 
-<div class="viewer" bind:clientWidth={width}>
+<!-- Stop the auto-spin as soon as someone grabs the model (not when they click the button). -->
+<div
+	class="viewer"
+	role="presentation"
+	bind:clientWidth={width}
+	onpointerdown={(e) => {
+		if (!(e.target as HTMLElement).closest('button')) spinning = false;
+	}}
+>
 	<Canvas>
 		<T.PerspectiveCamera makeDefault position={camPos} fov={FOV}>
 			<OrbitControls
@@ -36,7 +44,6 @@
 				minDistance={2}
 				maxDistance={8}
 				maxPolarAngle={Math.PI * 0.85}
-				onstart={() => (spinning = false)}
 			/>
 		</T.PerspectiveCamera>
 

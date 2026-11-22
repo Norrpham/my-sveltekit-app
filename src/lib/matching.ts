@@ -37,7 +37,7 @@ export const WEIGHTS = {
 	theme: 40,
 	keycapColor: 15,
 	wireless: 10,
-	feature: 10, // per requested feature
+	feature: 30, // per requested must-have feature (knob, screen…)
 	budgetOk: 15,
 	buyable: 10, // in stock / varies
 	soldOut: -25
