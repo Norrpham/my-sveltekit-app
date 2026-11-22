@@ -80,3 +80,10 @@ describe('findMatches', () => {
 		expect(top.totalUsd!).toBeLessThanOrEqual(120);
 	});
 });
+
+describe('must-have features', () => {
+	it('puts a board with the required screen first, even over a color match', () => {
+		const [top] = findMatches({ layout: '75%', caseColor: 'blue', features: ['screen'] }, keyboards, keycaps);
+		expect(top.keyboard.features.map((f) => f.type)).toContain('screen');
+	});
+});
