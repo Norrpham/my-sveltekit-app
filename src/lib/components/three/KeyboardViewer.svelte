@@ -9,17 +9,31 @@
 		$props();
 
 	let spinning = $state(true);
+
+	// Fit the camera to the window: wide screens can get closer than phones.
+	const FOV = 32;
+	const HEIGHT = 380;
+	let width = $state(800);
+	let distance = $derived.by(() => {
+		const aspect = Math.max(width, 1) / HEIGHT;
+		const halfV = ((FOV / 2) * Math.PI) / 180;
+		const halfH = Math.atan(Math.tan(halfV) * aspect);
+		const fitWidth = 3.9; // a 75% board is about 3.4 units wide, plus a margin
+		return Math.max(3, fitWidth / 2 / Math.tan(halfH));
+	});
+	// Look from in front and a bit above.
+	let camPos = $derived<[number, number, number]>([0, distance * 0.55, distance * 0.83]);
 </script>
 
-<div class="viewer">
+<div class="viewer" bind:clientWidth={width}>
 	<Canvas>
-		<T.PerspectiveCamera makeDefault position={[0, 3.4, 4.6]} fov={32}>
+		<T.PerspectiveCamera makeDefault position={camPos} fov={FOV}>
 			<OrbitControls
 				autoRotate={spinning}
 				autoRotateSpeed={1.6}
 				enableDamping
 				enablePan={false}
-				minDistance={2.6}
+				minDistance={2}
 				maxDistance={8}
 				maxPolarAngle={Math.PI * 0.85}
 				onstart={() => (spinning = false)}
