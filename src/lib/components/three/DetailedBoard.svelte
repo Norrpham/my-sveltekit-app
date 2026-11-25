@@ -120,7 +120,7 @@
 			</T.Mesh>
 		{/if}
 		<T.Group position={[0, r.keysAboveRim, keysCenterZ]}>
-			<Keys {layout} {keycap} plateColor={r.plateColor} {lit} {ledColor} />
+			<Keys {layout} {keycap} plateColor={r.plateColor} {lit} {ledColor} blockerColor={parts.top} />
 		</T.Group>
 	</T.Group>
 {:else}

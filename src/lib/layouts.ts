@@ -25,6 +25,8 @@ export interface FeatureSpot {
 
 export interface BuiltLayout {
 	keys: Key[];
+	/** Empty spots inside the key area (e.g. the gap before the arrows). */
+	gaps?: { x: number; y: number; w: number }[];
 	spots: FeatureSpot[]; // places where a knob/screen/touch bar replaced keys
 	widthU: number;
 	depthU: number;
@@ -142,18 +144,25 @@ function kindOf(label: string, w: number): KeyKind {
 }
 
 /** Place the keys of a key map. y counts rows from the back. */
-export function placeKeys(map: Keymap): { keys: Key[]; widthU: number; depthU: number } {
+export function placeKeys(map: Keymap): {
+	keys: Key[];
+	gaps: { x: number; y: number; w: number }[];
+	widthU: number;
+	depthU: number;
+} {
 	const keys: Key[] = [];
+	const gaps: { x: number; y: number; w: number }[] = [];
 	let y = 0;
 	map.rows.forEach((row, r) => {
 		let x = 0;
 		for (const [label, w] of row) {
 			if (label !== '_gap') keys.push({ label, x, y, w, kind: kindOf(label, w) });
+			else gaps.push({ x, y, w });
 			x += w;
 		}
 		y += 1 + (map.rowGaps?.[r] ?? 0);
 	});
-	return { keys, widthU: Math.max(...keys.map((k) => k.x + k.w)), depthU: y };
+	return { keys, gaps, widthU: Math.max(...keys.map((k) => k.x + k.w)), depthU: y };
 }
 
 /**
@@ -195,5 +204,5 @@ export function buildLayout(layout: Layout, features: Feature[] = [], boardId?: 
 			spots.push({ type: 'touchbar', x, y: bottom[0].y, w: Math.max(...bottom.map((k) => k.x + k.w)) - x });
 		}
 	}
-	return { keys, spots, widthU, depthU };
+	return { keys, spots, widthU, depthU, gaps: placed.gaps };
 }

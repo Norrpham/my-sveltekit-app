@@ -16,7 +16,8 @@
 		keycap,
 		plateColor = '#1a1a1a',
 		lit = false,
-		ledColor = null
+		ledColor = null,
+		blockerColor = null
 	}: {
 		layout: BuiltLayout;
 		keycap: Keycap;
@@ -25,6 +26,8 @@
 		lit?: boolean;
 		/** LED color; 'rgb' makes a rainbow across the board; null = no LEDs. */
 		ledColor?: string | null;
+		/** Case-colored blocks filling gaps in the key rows (part of the case). */
+		blockerColor?: string | null;
 	} = $props();
 
 	let profile = $derived(profileOf(keycap.profile, keycap.lowProfile));
@@ -126,6 +129,15 @@
 	<T.MeshStandardMaterial color={plateColor} roughness={0.8} metalness={0.2} />
 </T.Mesh>
 
+{#if blockerColor}
+	{#each layout.gaps ?? [] as g (g.x + '-' + g.y)}
+		<T.Mesh position={[-keysW / 2 + (g.x + g.w / 2) * U, -1.6, -keysD / 2 + (g.y + 0.5) * U]}>
+			<T.BoxGeometry args={[g.w * U + 0.8, 2.4, U + 0.8]} />
+			<T.MeshStandardMaterial color={blockerColor} roughness={0.68} />
+		</T.Mesh>
+	{/each}
+{/if}
+
 {#each layout.keys as k (k.label + k.x + '-' + k.y)}
 	{@const row = sculptRow(rowOrder.indexOf(k.y), rowOrder.length)}
 	{@const h = profile.heights[row]}
@@ -183,7 +195,7 @@
 				<!-- Side-printed legend on the front face (it leans back with the taper) -->
 				<Text
 					text={lg.shift ? `${lg.shift} ${lg.main}` : lg.main}
-					fontSize={size(lg.main, k.w) * 0.62}
+					fontSize={lg.main.length <= 1 && !lg.shift ? 3 : lg.shift ? 2.4 : 1.9}
 					color={ink}
 					outlineWidth={lit && shine ? '18%' : 0}
 					outlineBlur={lit && shine ? '60%' : 0}
