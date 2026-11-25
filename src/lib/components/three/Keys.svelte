@@ -44,7 +44,7 @@
 		const novelty = noveltyFor(k);
 		if (novelty) return novelty.color;
 		if (k.kind === 'accent') return keycap.colors.accent;
-		if (k.kind === 'mod') return mixHex(keycap.colors.base, keycap.colors.legend, 0.1);
+		if (k.kind === 'mod') return mixHex(keycap.colors.base, keycap.colors.legend, 0.06);
 		return keycap.colors.base;
 	}
 

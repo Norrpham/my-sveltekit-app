@@ -60,7 +60,7 @@
 			<div class="cols">
 				<div>
 					{#if Viewer}
-						<Viewer keyboard={b} variant={b.variants[c.variant]} {keycap} />
+						<Viewer keyboard={b} variant={b.variants[c.variant]} {keycap} zoomable />
 					{:else}
 						<div class="placeholder">Loading 3D…</div>
 					{/if}

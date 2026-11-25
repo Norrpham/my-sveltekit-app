@@ -6,8 +6,12 @@
 	import Studio from './Studio.svelte';
 	import type { Keyboard, Keycap, Variant } from '../../types';
 
-	let { keyboard, variant, keycap }: { keyboard: Keyboard; variant: Variant; keycap: Keycap } =
-		$props();
+	let {
+		keyboard,
+		variant,
+		keycap,
+		zoomable = false
+	}: { keyboard: Keyboard; variant: Variant; keycap: Keycap; zoomable?: boolean } = $props();
 
 	let spinning = $state(true);
 
@@ -46,7 +50,9 @@
 				autoRotateSpeed={1.6}
 				enableDamping
 				enablePan={false}
-				enableZoom={false}
+				enableZoom={zoomable}
+					minDistance={1.2}
+					maxDistance={12}
 				maxPolarAngle={Math.PI * 0.85}
 			/>
 		</T.PerspectiveCamera>
@@ -71,7 +77,7 @@
 		<button type="button" onclick={() => (spinning = !spinning)}>
 			{spinning ? 'Pause spin' : 'Spin'}
 		</button>
-		<span>Drag to rotate</span>
+		<span>Drag to rotate{zoomable ? ', scroll to zoom' : ''}</span>
 	</div>
 </div>
 {#if keyboard.detail === 'detailed'}

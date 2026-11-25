@@ -34,7 +34,7 @@ export function patternTexture(name: PatternName, bg: string, fg: string, repeat
 	g.fillRect(0, 0, S, S);
 	g.strokeStyle = fg;
 	g.fillStyle = fg;
-	g.lineWidth = 3;
+	g.lineWidth = 6;
 
 	if (name === 'ichimatsu') {
 		// Checkerboard.
@@ -90,7 +90,7 @@ export function patternTexture(name: PatternName, bg: string, fg: string, repeat
 		const n = 2;
 		const s = S / n; // triangle side
 		const h = (Math.sqrt(3) / 2) * s;
-		g.lineWidth = 2.5;
+		g.lineWidth = 6;
 		for (let row = -1; row <= Math.ceil(S / h); row++)
 			for (let col = -2; col <= n * 2 + 1; col++) {
 				const up = (row + col) % 2 === 0;

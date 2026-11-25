@@ -60,7 +60,7 @@ export const boardRecipes: Record<string, BoardRecipe> = {
 		// Pocket is 96.5 mm deep and the keys 95.25 mm, so the keys sit centred.
 		frontBezel: 7.5,
 		keysAboveRim: 1.6,
-		plateColor: '#2f3a2f', // green FR4 plate in the kit
+		plateColor: '#232323', // FR4 plate in the kit
 		glbUrl: '/models/bakeneko65-case.glb',
 		glbTiltDeg: 6
 	}
