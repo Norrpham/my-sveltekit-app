@@ -7,8 +7,8 @@ export function metalLook(color: string, finish: Variant['finish'] = 'matte') {
 		return { color, metalness: 0.15, roughness: 0.32, clearcoat: 1, clearcoatRoughness: 0.08 };
 	if (finish === 'glitter')
 		return { color, metalness: 0.75, roughness: 0.3, clearcoat: 0.4, clearcoatRoughness: 0.25 };
-	// Media-blasted / coated aluminum: soft, satin metal.
-	return { color, metalness: 0.55, roughness: 0.45 };
+	// Media-blasted, anodized or coated aluminum: soft satin, keeps its color.
+	return { color, metalness: 0.35, roughness: 0.5 };
 }
 
 export function woodLook(color: string) {

@@ -88,7 +88,7 @@
         "sourceUrl": "https://compendium.modedesigns.com/keyboards/sonnet-2026/design-files/"
       },
       {
-        "what": "Official drawings of the 2026 Sonnet (case shape reference, shown in the gallery, resized)",
+        "what": "Official drawings of the 2026 Sonnet (case shape reference, shown in the gallery, resized and colors inverted)",
         "author": "Mode Designs LLC",
         "license": "CC-BY-4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -99,17 +99,17 @@
       {
         "src": "/images/sources/mode-sonnet-2026.webp",
         "caption": "2026 Sonnet, assembled",
-        "credit": "Drawing © Mode Designs LLC, CC BY 4.0 (resized)"
+        "credit": "Drawing © Mode Designs LLC, CC BY 4.0 (resized, colors inverted)"
       },
       {
         "src": "/images/sources/mode-sonnet-2026-top.webp",
         "caption": "Top case",
-        "credit": "Drawing © Mode Designs LLC, CC BY 4.0 (resized)"
+        "credit": "Drawing © Mode Designs LLC, CC BY 4.0 (resized, colors inverted)"
       },
       {
         "src": "/images/sources/mode-sonnet-2026-bottom.webp",
         "caption": "Bottom case",
-        "credit": "Drawing © Mode Designs LLC, CC BY 4.0 (resized)"
+        "credit": "Drawing © Mode Designs LLC, CC BY 4.0 (resized, colors inverted)"
       }
     ]
   },
@@ -213,7 +213,7 @@
         "sourceUrl": "https://compendium.modedesigns.com/keyboards/encore-2026/design-files/"
       },
       {
-        "what": "Official drawings of the 2026 Encore (case shape reference, shown in the gallery, resized)",
+        "what": "Official drawings of the 2026 Encore (case shape reference, shown in the gallery, resized and colors inverted)",
         "author": "Mode Designs LLC",
         "license": "CC-BY-4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -224,22 +224,22 @@
       {
         "src": "/images/sources/mode-encore-2026.webp",
         "caption": "2026 Encore, assembled",
-        "credit": "Drawing © Mode Designs LLC, CC BY 4.0 (resized)"
+        "credit": "Drawing © Mode Designs LLC, CC BY 4.0 (resized, colors inverted)"
       },
       {
         "src": "/images/sources/mode-encore-2026-top.webp",
         "caption": "Wood top frame",
-        "credit": "Drawing © Mode Designs LLC, CC BY 4.0 (resized)"
+        "credit": "Drawing © Mode Designs LLC, CC BY 4.0 (resized, colors inverted)"
       },
       {
         "src": "/images/sources/mode-encore-2026-middle.webp",
         "caption": "Middle piece",
-        "credit": "Drawing © Mode Designs LLC, CC BY 4.0 (resized)"
+        "credit": "Drawing © Mode Designs LLC, CC BY 4.0 (resized, colors inverted)"
       },
       {
         "src": "/images/sources/mode-encore-2026-bottom.webp",
         "caption": "Bottom case",
-        "credit": "Drawing © Mode Designs LLC, CC BY 4.0 (resized)"
+        "credit": "Drawing © Mode Designs LLC, CC BY 4.0 (resized, colors inverted)"
       }
     ]
   },
@@ -357,7 +357,7 @@
         "sourceUrl": "https://github.com/kkatano/bakeneko-65"
       },
       {
-        "what": "Photo of a Bakeneko65 build (shown in the gallery, resized)",
+        "what": "Photo of a Bakeneko65 build (shown in the gallery, resized and colors inverted)",
         "author": "kkatano",
         "license": "MIT",
         "licenseUrl": "https://github.com/kkatano/bakeneko-65/blob/master/LICENSE",

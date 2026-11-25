@@ -25,6 +25,13 @@
 	const cx = (k: Key) => -keysW / 2 + (k.x + k.w / 2) * U;
 	const cz = (k: Key) => -keysD / 2 + (k.y + 0.5) * U;
 
+	// Mix two hex colors the way they look on screen (sRGB), not in linear light.
+	function mixHex(a: string, b: string, t: number): string {
+		const p = (h: string) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
+		const [x, y] = [p(a), p(b)];
+		return '#' + x.map((v, i) => Math.round(v + (y[i] - v) * t).toString(16).padStart(2, '0')).join('');
+	}
+
 	function brightness(hex: string) {
 		const c = new Color(hex);
 		return 0.299 * c.r + 0.587 * c.g + 0.114 * c.b;
@@ -37,9 +44,7 @@
 		const novelty = noveltyFor(k);
 		if (novelty) return novelty.color;
 		if (k.kind === 'accent') return keycap.colors.accent;
-		if (k.kind === 'mod') {
-			return '#' + new Color(keycap.colors.base).lerp(new Color(keycap.colors.legend), 0.12).getHexString();
-		}
+		if (k.kind === 'mod') return mixHex(keycap.colors.base, keycap.colors.legend, 0.1);
 		return keycap.colors.base;
 	}
 

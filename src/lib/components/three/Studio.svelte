@@ -10,7 +10,7 @@
 	const pmrem = new PMREMGenerator(renderer);
 	const env = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
 	scene.environment = env;
-	scene.environmentIntensity = 0.75;
+	scene.environmentIntensity = 0.45;
 
 	onDestroy(() => {
 		scene.environment = null;

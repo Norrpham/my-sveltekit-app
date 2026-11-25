@@ -22,7 +22,7 @@
 		const halfH = Math.atan(Math.tan(halfV) * aspect);
 		// A 75% board is ~3.4 units wide. Wide screens leave extra room so the board
 		// stays in frame while it spins; narrow (phone) screens fit it more tightly.
-		const fitWidth = aspect < 1.4 ? 4.2 : 6.2;
+		const fitWidth = aspect < 1.4 ? 3.9 : 5.6;
 		return Math.max(3, fitWidth / 2 / Math.tan(halfH));
 	});
 	// Look from in front and a bit above.
@@ -52,9 +52,9 @@
 		</T.PerspectiveCamera>
 
 		<Studio />
-		<T.AmbientLight intensity={0.35} />
-		<T.DirectionalLight position={[3, 6, 4]} intensity={1.6} />
-		<T.DirectionalLight position={[-4, 3, -3]} intensity={0.5} />
+		<T.AmbientLight intensity={0.25} />
+		<T.DirectionalLight position={[3, 6, 4]} intensity={1.3} />
+		<T.DirectionalLight position={[-4, 3, -3]} intensity={0.4} />
 
 		<!-- Model is built in millimetres; 0.01 turns 300 mm into 3 scene units. -->
 		<T.Group scale={0.01}>
