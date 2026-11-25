@@ -4,8 +4,7 @@
 	import { ContactShadows, OrbitControls } from '@threlte/extras';
 	import KeyboardModel from './KeyboardModel.svelte';
 	import Studio from './Studio.svelte';
-	import type { PerspectiveCamera as PerspectiveCameraType } from 'three';
-	import type { OrbitControls as OrbitControlsType } from 'three/examples/jsm/controls/OrbitControls.js';
+	import CameraView from './CameraView.svelte';
 	import type { Keyboard, Keycap, Variant } from '../../types';
 
 	let {
@@ -46,19 +45,6 @@
 	// Look from in front and a bit above.
 	let camPos = $derived<[number, number, number]>([0, distance * 0.55, distance * 0.83]);
 
-	// "Match the photo": move the camera to the photo's angle and stop spinning.
-	let cam = $state<PerspectiveCameraType | undefined>();
-	let controls = $state<OrbitControlsType | undefined>();
-	$effect(() => {
-		if (!view || !cam || !controls) return;
-		const az = (view.azimuth * Math.PI) / 180;
-		const el = (Math.min(view.elevation, 89.5) * Math.PI) / 180;
-		const r = distance * 0.95;
-		spinning = false;
-		cam.position.set(r * Math.cos(el) * Math.sin(az), r * Math.sin(el), r * Math.cos(el) * Math.cos(az));
-		controls.target.set(0, 0, 0);
-		controls.update();
-	});
 </script>
 
 <!-- Stop the auto-spin as soon as someone grabs the model (not when they click the button). -->
@@ -73,7 +59,7 @@
 	}}
 >
 	<Canvas>
-		<T.PerspectiveCamera makeDefault position={camPos} fov={FOV} bind:ref={cam}>
+		<T.PerspectiveCamera makeDefault position={camPos} fov={FOV}>
 			<OrbitControls
 				autoRotate={spinning}
 				autoRotateSpeed={1.6}
@@ -86,6 +72,7 @@
 			/>
 		</T.PerspectiveCamera>
 
+		<CameraView {view} {distance} onapply={() => (spinning = false)} />
 		<Studio intensity={0.45 * dim} />
 		<T.AmbientLight intensity={0.25 * dim} />
 		<T.DirectionalLight position={[3, 6, 4]} intensity={1.3 * dim} />
