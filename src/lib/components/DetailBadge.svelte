@@ -26,6 +26,8 @@
 		border: 1px solid var(--line);
 		color: var(--muted);
 		white-space: nowrap;
+		width: fit-content;
+		margin-top: 0.2rem;
 	}
 	.detailed {
 		border-color: #3b5bfd;
