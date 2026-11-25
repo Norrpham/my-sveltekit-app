@@ -62,6 +62,7 @@
 	<p class="wrap fine">
 		© {new Date().getFullYear()} {site.name}. Some links are affiliate links: we may earn a commission
 		if you buy, at no extra cost to you. 3D previews are approximate.
+		<a href="/credits">Credits and licenses</a>
 	</p>
 </footer>
 

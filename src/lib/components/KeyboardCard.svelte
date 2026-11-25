@@ -1,5 +1,6 @@
 <script lang="ts">
 	import AvailabilityBadge from './AvailabilityBadge.svelte';
+	import DetailBadge from './DetailBadge.svelte';
 	import { buyLink, formatPrice } from '../products';
 	import type { Keyboard } from '../types';
 
@@ -16,6 +17,7 @@
 	<header>
 		<h3>{keyboard.name}</h3>
 		<p class="brand">{keyboard.brand}</p>
+		<DetailBadge {keyboard} />
 	</header>
 
 	<div class="swatches" aria-label="Case colors">

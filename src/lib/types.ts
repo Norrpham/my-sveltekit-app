@@ -20,9 +20,37 @@ export interface Feature {
 	size?: string;
 }
 
+/** Colors of the separate case pieces, when a board has more than one. */
+export interface CaseParts {
+	top: string;
+	middle?: string;
+	bottom?: string;
+	accent?: string;
+	/** What the top piece is made of. Wood gets a grain texture. */
+	topMaterial?: 'aluminum' | 'wood';
+}
+
 export interface Variant {
 	name: string;
 	caseColorHex: string;
+	parts?: CaseParts;
+	/** Coating look: plain, with glitter, or glossy pearl. */
+	finish?: 'matte' | 'glitter' | 'pearl';
+}
+
+/** Where an open design file or picture came from, and its license. */
+export interface Credit {
+	what: string; // e.g. "Plate CAD (exact key positions and size)"
+	author: string;
+	license: string; // e.g. "CERN-OHL-P-2.0"
+	licenseUrl: string;
+	sourceUrl: string;
+}
+
+export interface GalleryImage {
+	src: string;
+	caption: string;
+	credit: string; // shown under the picture
 }
 
 export interface Keyboard {
@@ -45,6 +73,15 @@ export interface Keyboard {
 	colorsApprox: boolean;
 	needsCheck: string[];
 	notes?: string;
+	/**
+	 * 'detailed': built from the maker's open design files (see credits).
+	 * Missing or 'basic': a simple model from public facts.
+	 */
+	detail?: 'detailed' | 'basic';
+	credits?: Credit[];
+	gallery?: GalleryImage[];
+	/** Shown under the 3D view, e.g. "KeyCraze is not affiliated with Mode." */
+	disclaimer?: string;
 }
 
 export interface NoveltyKey {
@@ -74,4 +111,12 @@ export interface Keycap {
 	checkedOn: string;
 	colorsApprox: boolean;
 	needsCheck: string[];
+	/**
+	 * Traditional pattern for the theme keys while we have no permission to
+	 * show the real character art. These patterns are centuries old and free to use.
+	 */
+	pattern?: PatternName;
+	patternColors?: [string, string];
 }
+
+export type PatternName = 'asanoha' | 'ichimatsu' | 'uroko' | 'seigaiha' | 'kikko';

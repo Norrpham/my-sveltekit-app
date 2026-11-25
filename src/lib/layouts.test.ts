@@ -49,3 +49,34 @@ describe('buildLayout', () => {
 		}
 	});
 });
+
+describe('exact key maps from the open plate files', () => {
+	it('Mode Sonnet 2026 has 82 keys, 16u wide, with the F-row gap', () => {
+		const l = buildLayout('75%', [], 'mode-sonnet-2026');
+		expect(l.keys.length).toBe(82);
+		expect(l.widthU).toBe(16);
+		expect(l.depthU).toBe(6.25);
+		// F1 starts after Esc and a half-key gap.
+		expect(l.keys.find((k) => k.label === 'F1')!.x).toBe(1.5);
+		expect(l.keys.find((k) => k.label === 'Del')!.x).toBe(15);
+	});
+	it('Mode Encore 2026 has 68 keys, 16u wide', () => {
+		const l = buildLayout('65%', [], 'mode-encore-2026');
+		expect(l.keys.length).toBe(68);
+		expect(l.widthU).toBe(16);
+	});
+	it('Bakeneko65 has 67 keys with a gap before the arrows', () => {
+		const l = buildLayout('65%', [], 'bakeneko65');
+		expect(l.keys.length).toBe(67);
+		expect(l.widthU).toBe(16);
+		expect(l.keys.find((k) => k.label === '←')!.x).toBe(13);
+	});
+	it('every row of every exact map is 16u wide', () => {
+		for (const id of ['mode-sonnet-2026', 'mode-encore-2026', 'bakeneko65']) {
+			const l = buildLayout('65%', [], id);
+			const rows = new Map<number, number>();
+			for (const k of l.keys) rows.set(k.y, Math.max(rows.get(k.y) ?? 0, k.x + k.w));
+			for (const w of rows.values()) expect(w).toBe(16);
+		}
+	});
+});

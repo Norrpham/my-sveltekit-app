@@ -1,5 +1,6 @@
 <script lang="ts">
 	import AvailabilityBadge from './AvailabilityBadge.svelte';
+	import DetailBadge from './DetailBadge.svelte';
 	import { buyLink, formatPrice } from '../products';
 	import type { Match } from '../matching';
 
@@ -27,6 +28,7 @@
 			<div>
 				<strong>{match.keyboard.name}</strong>
 				<span class="sub">{match.keyboard.brand} · {match.keyboard.layout} · {match.variant.name}</span>
+				<DetailBadge keyboard={match.keyboard} />
 				<span class="row">
 					{formatPrice(match.keyboard.priceUsd)}
 					<AvailabilityBadge value={match.keyboard.availability} />

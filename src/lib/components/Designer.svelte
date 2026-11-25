@@ -3,6 +3,8 @@
 	// real products → 3D preview. Used on the Home page and on /match.
 	import { onMount, type Component, type Snippet } from 'svelte';
 	import MatchCard from './MatchCard.svelte';
+	import SourceGallery from './SourceGallery.svelte';
+	import { buyLink } from '../products';
 	import { colorFamilies } from '../colors';
 	import { findMatches, type Spec } from '../matching';
 	import { keyboards, keycaps } from '../products';
@@ -197,6 +199,15 @@
 				<p class="caption">
 					{previewed.keyboard.name} ({previewed.variant.name}) with {previewed.keycap.name} keycaps
 				</p>
+				{#if previewed.keycap.pattern}
+					<p class="art-note">
+						✦ Character keys: the real set has character art on these keys. We show the set's colors
+						and a traditional Japanese pattern instead, because we don't have permission to copy the
+						art.
+						<a href={buyLink(previewed.keycap)} target="_blank" rel="noopener sponsored">See the real art</a>
+					</p>
+				{/if}
+				<SourceGallery keyboard={previewed.keyboard} />
 			</div>
 		{/if}
 
@@ -216,6 +227,14 @@
 </section>
 
 <style>
+	.art-note {
+		font-size: 0.78rem;
+		color: var(--muted);
+		margin: 0.2rem 0 0.6rem;
+	}
+	.art-note a {
+		color: #8ea2ff;
+	}
 	.hero {
 		padding: 4.5rem 0 3rem;
 		scroll-margin-top: 64px;

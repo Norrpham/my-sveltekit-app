@@ -30,8 +30,15 @@ export interface BuiltLayout {
 	depthU: number;
 }
 
-// A row is a list of [label, width]. A label of '' is an empty gap.
-type Row = [string, number][];
+// A row is a list of [label, width]. A label of '' is the spacebar (no legend);
+// '_gap' is empty space with no key.
+export type Row = [string, number][];
+
+export interface Keymap {
+	rows: Row[];
+	/** Extra space (in u) after a row, e.g. { 0: 0.25 } below the F-key row. */
+	rowGaps?: Record<number, number>;
+}
 
 const n = (labels: string) => labels.split(' ').map((l): [string, number] => [l, 1]);
 
@@ -39,6 +46,47 @@ const numberRow = n('Esc 1 2 3 4 5 6 7 8 9 0 - =');
 const qRow = n('Q W E R T Y U I O P [ ]');
 const aRow = n("A S D F G H J K L ; '");
 const zRow = n('Z X C V B N M , . /');
+
+const gap = (w: number): [string, number] => ['_gap', w];
+
+/**
+ * Exact key maps for boards built from their makers' open files.
+ * Key positions were checked against the switch cut-outs in each plate file.
+ */
+export const keymaps: Record<string, Keymap> = {
+	// Mode Sonnet (2026): 75%, F-row in groups of four (from the 2026 ANSI plate).
+	'mode-sonnet-2026': {
+		rowGaps: { 0: 0.25 },
+		rows: [
+			[['Esc', 1], gap(0.5), ...n('F1 F2 F3 F4'), gap(0.5), ...n('F5 F6 F7 F8'), gap(0.5), ...n('F9 F10 F11 F12'), gap(0.5), ['Del', 1]],
+			[...n('` 1 2 3 4 5 6 7 8 9 0 - ='), ['Back', 2], ['Home', 1]],
+			[['Tab', 1.5], ...n('Q W E R T Y U I O P [ ]'), ['\\', 1.5], ['PgUp', 1]],
+			[['Caps', 1.75], ...n("A S D F G H J K L ; '"), ['Enter', 2.25], ['PgDn', 1]],
+			[['Shift', 2.25], ...n('Z X C V B N M , . /'), ['Shift', 1.75], ['↑', 1], ['End', 1]],
+			[['Ctrl', 1.25], ['Win', 1.25], ['Alt', 1.25], ['', 6.25], ['Alt', 1], ['Fn', 1], ['Ctrl', 1], ['←', 1], ['↓', 1], ['→', 1]]
+		]
+	},
+	// Mode Encore (2026): 65% (from the 2026 ANSI plate).
+	'mode-encore-2026': {
+		rows: [
+			[...n('Esc 1 2 3 4 5 6 7 8 9 0 - ='), ['Back', 2], ['Del', 1]],
+			[['Tab', 1.5], ...n('Q W E R T Y U I O P [ ]'), ['\\', 1.5], ['PgUp', 1]],
+			[['Caps', 1.75], ...n("A S D F G H J K L ; '"), ['Enter', 2.25], ['PgDn', 1]],
+			[['Shift', 2.25], ...n('Z X C V B N M , . /'), ['Shift', 1.75], ['↑', 1], ['End', 1]],
+			[['Ctrl', 1.25], ['Win', 1.25], ['Alt', 1.25], ['', 6.25], ['Alt', 1], ['Fn', 1], ['Ctrl', 1], ['←', 1], ['↓', 1], ['→', 1]]
+		]
+	},
+	// Bakeneko65 by kkatano: 65% with a gap before the arrows (from layout-ansi.json).
+	bakeneko65: {
+		rows: [
+			[...n('Esc 1 2 3 4 5 6 7 8 9 0 - ='), ['Back', 2], ['Home', 1]],
+			[['Tab', 1.5], ...n('Q W E R T Y U I O P [ ]'), ['\\', 1.5], ['PgUp', 1]],
+			[['Caps', 1.75], ...n("A S D F G H J K L ; '"), ['Enter', 2.25], ['PgDn', 1]],
+			[['Shift', 2.25], ...n('Z X C V B N M , . /'), ['Shift', 1.75], ['↑', 1], ['End', 1]],
+			[['Ctrl', 1.25], ['Win', 1.25], ['Alt', 1.25], ['', 6.25], ['Alt', 1.25], ['Ctrl', 1.25], gap(0.5), ['←', 1], ['↓', 1], ['→', 1]]
+		]
+	}
+};
 
 const rows: Record<Layout, { rows: Row[]; gapAfterFirst?: number }> = {
 	'60%': {
@@ -81,7 +129,7 @@ const rows: Record<Layout, { rows: Row[]; gapAfterFirst?: number }> = {
 	}
 };
 
-const MODS = new Set([
+export const MODS = new Set([
 	'Tab', 'Caps', 'Shift', 'Ctrl', 'Win', 'Alt', 'Fn', 'Menu', 'Back', '\\',
 	'Del', 'Ins', 'Home', 'End', 'PgUp', 'PgDn', 'PrtSc', '↑', '↓', '←', '→'
 ]);
@@ -93,22 +141,34 @@ function kindOf(label: string, w: number): KeyKind {
 	return 'alpha';
 }
 
-/** Lay out every key, then swap keys out for the board's knob, screen or touch bar. */
-export function buildLayout(layout: Layout, features: Feature[] = []): BuiltLayout {
-	const def = rows[layout];
-	let keys: Key[] = [];
+/** Place the keys of a key map. y counts rows from the back. */
+export function placeKeys(map: Keymap): { keys: Key[]; widthU: number; depthU: number } {
+	const keys: Key[] = [];
 	let y = 0;
-	def.rows.forEach((row, r) => {
+	map.rows.forEach((row, r) => {
 		let x = 0;
 		for (const [label, w] of row) {
 			if (label !== '_gap') keys.push({ label, x, y, w, kind: kindOf(label, w) });
 			x += w;
 		}
-		y += 1 + (r === 0 && def.gapAfterFirst ? def.gapAfterFirst : 0);
+		y += 1 + (map.rowGaps?.[r] ?? 0);
 	});
+	return { keys, widthU: Math.max(...keys.map((k) => k.x + k.w)), depthU: y };
+}
 
-	const widthU = Math.max(...keys.map((k) => k.x + k.w));
-	const depthU = y;
+/**
+ * Lay out every key, then swap keys out for the board's knob, screen or touch bar.
+ * Pass a keyboard id that has an exact key map to use that instead of the standard layout.
+ */
+export function buildLayout(layout: Layout, features: Feature[] = [], boardId?: string): BuiltLayout {
+	const def = rows[layout];
+	const exact = boardId ? keymaps[boardId] : undefined;
+	const placed = placeKeys(
+		exact ?? { rows: def.rows, rowGaps: def.gapAfterFirst ? { 0: def.gapAfterFirst } : undefined }
+	);
+	let keys = placed.keys;
+
+	const { widthU, depthU } = placed;
 	const spots: FeatureSpot[] = [];
 	const topRow = () => keys.filter((k) => k.y === 0).sort((a, b) => a.x - b.x);
 	const types = new Set(features.map((f) => f.type));

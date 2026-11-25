@@ -1,15 +1,21 @@
 <script lang="ts">
-	// One keyboard built from its "recipe": layout + size + colors + special parts.
+	// One keyboard. Boards with open design files get the detailed model;
+	// the rest are built from their "recipe": layout + size + colors + special parts.
 	// Everything here is measured in millimetres; the viewer scales it down.
 	import { T } from '@threlte/core';
-	import { RoundedBoxGeometry, Text } from '@threlte/extras';
+	import { RoundedBoxGeometry } from '@threlte/extras';
 	import { Color } from 'three';
-	import { buildLayout, UNIT_MM as U, type Key } from '../../layouts';
+	import { buildLayout, UNIT_MM as U } from '../../layouts';
+	import { boardRecipes } from '../../boards';
 	import type { Keyboard, Keycap, Variant } from '../../types';
+	import DetailedBoard from './DetailedBoard.svelte';
+	import Keys from './Keys.svelte';
+	import { metalLook } from './materials';
 
 	let { keyboard, variant, keycap }: { keyboard: Keyboard; variant: Variant; keycap: Keycap } =
 		$props();
 
+	let recipe = $derived(keyboard.detail === 'detailed' ? boardRecipes[keyboard.id] : undefined);
 	let layout = $derived(buildLayout(keyboard.layout, keyboard.features));
 	let lowProfile = $derived(keyboard.caseShape === 'low-profile');
 
@@ -32,35 +38,11 @@
 	let keysBack = $derived(keysFront - keysD);
 	let backSpace = $derived(keysBack + caseD / 2);
 
-	const capH = $derived(lowProfile ? 4 : 8);
 	const keyBottom = $derived(caseH - 3);
 
-	// Key positions in mm, from layout units.
+	// Positions of the knob/screen/touch bar, from layout units.
 	const cx = (x: number, w: number) => -keysW / 2 + (x + w / 2) * U;
 	const cz = (y: number) => keysBack + (y + 0.5) * U;
-
-	function brightness(hex: string) {
-		const c = new Color(hex);
-		return 0.299 * c.r + 0.587 * c.g + 0.114 * c.b;
-	}
-
-	function capColor(k: Key): string {
-		const novelty = keycap.noveltyKeys.find((n) => n.key === k.label);
-		if (novelty) return novelty.color;
-		if (k.kind === 'accent') return keycap.colors.accent;
-		if (k.kind === 'mod') {
-			// Modifiers: the base color, nudged a little toward the legend color.
-			return '#' + new Color(keycap.colors.base).lerp(new Color(keycap.colors.legend), 0.12).getHexString();
-		}
-		return keycap.colors.base;
-	}
-
-	// Pick legend or base color, whichever stands out more on this key.
-	function legendOn(bg: string): string {
-		const { legend, base } = keycap.colors;
-		const gap = (c: string) => Math.abs(brightness(c) - brightness(bg));
-		return gap(legend) >= gap(base) ? legend : base;
-	}
 
 	// The knob and other metal parts use a darker version of the case color.
 	let metal = $derived('#' + new Color(variant.caseColorHex).multiplyScalar(0.75).getHexString());
@@ -71,39 +53,22 @@
 	const dotOn = (c: number, r: number) => (c * 7 + r * 13) % 5 !== 0;
 </script>
 
+{#if recipe}
+	<T.Group position.y={-12}>
+		<DetailedBoard {keyboard} {variant} {keycap} {recipe} />
+	</T.Group>
+{:else}
 <T.Group rotation.x={tilt} position.y={-caseH / 2}>
 	<!-- Case -->
-	<T.Mesh position={[0, caseH / 2, 0]}>
+	<T.Mesh position={[0, caseH / 2, 0]} receiveShadow>
 		<RoundedBoxGeometry args={[caseL, caseH, caseD]} radius={lowProfile ? 3 : 5} />
-		<T.MeshStandardMaterial color={variant.caseColorHex} roughness={0.45} metalness={0.25} />
-	</T.Mesh>
-
-	<!-- Dark plate under the keys -->
-	<T.Mesh position={[0, caseH + 0.05, (keysFront + keysBack) / 2]} rotation.x={-Math.PI / 2}>
-		<T.PlaneGeometry args={[keysW + 2, keysD + 2]} />
-		<T.MeshStandardMaterial color="#1a1a1a" roughness={0.9} />
+		<T.MeshPhysicalMaterial {...metalLook(variant.caseColorHex, variant.finish)} />
 	</T.Mesh>
 
 	<!-- Keycaps -->
-	{#each layout.keys as k (k.label + k.x + '-' + k.y)}
-		{@const color = capColor(k)}
-		<T.Mesh position={[cx(k.x, k.w), keyBottom + capH / 2, cz(k.y)]}>
-			<RoundedBoxGeometry args={[k.w * U - 1.6, capH, U - 1.6]} radius={1.6} smoothness={2} />
-			<T.MeshStandardMaterial {color} roughness={0.6} />
-		</T.Mesh>
-		{#if k.label && k.kind !== 'space'}
-			<Text
-				text={k.label}
-				fontSize={k.label.length > 2 ? 2.6 : 3.6}
-				color={legendOn(color)}
-				anchorX="center"
-				anchorY="middle"
-				position={[cx(k.x, k.w), keyBottom + capH + 0.05, cz(k.y)]}
-				rotation.x={-Math.PI / 2}
-			/>
-		{/if}
-	{/each}
-
+	<T.Group position={[0, keyBottom, (keysFront + keysBack) / 2]}>
+		<Keys {layout} {keycap} />
+	</T.Group>
 	<!-- Special parts -->
 	{#each layout.spots as s (s.type)}
 		{#if s.type === 'knob'}
@@ -156,3 +121,4 @@
 		{/if}
 	{/each}
 </T.Group>
+{/if}

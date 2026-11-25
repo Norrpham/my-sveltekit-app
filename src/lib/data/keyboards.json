@@ -1,5 +1,378 @@
 [
   {
+    "id": "mode-sonnet-2026",
+    "name": "Sonnet (2026)",
+    "brand": "Mode Designs",
+    "layout": "75%",
+    "dimensionsMm": {
+      "length": 315,
+      "width": 143,
+      "height": 24
+    },
+    "caseShape": "standard",
+    "variants": [
+      {
+        "name": "Black Sesame",
+        "caseColorHex": "#3a3a3d",
+        "parts": {
+          "top": "#3a3a3d",
+          "bottom": "#1c1c1e",
+          "accent": "#2a2a2c",
+          "topMaterial": "aluminum"
+        }
+      },
+      {
+        "name": "Golden Beige",
+        "caseColorHex": "#d8c7a6",
+        "parts": {
+          "top": "#d8c7a6",
+          "bottom": "#b89a64",
+          "accent": "#c9a86a",
+          "topMaterial": "aluminum"
+        }
+      },
+      {
+        "name": "Studio Light",
+        "caseColorHex": "#e9e7e2",
+        "parts": {
+          "top": "#e9e7e2",
+          "bottom": "#cfcbc3",
+          "accent": "#bdbab3",
+          "topMaterial": "aluminum"
+        }
+      },
+      {
+        "name": "Forest Mocha",
+        "caseColorHex": "#3f5245",
+        "parts": {
+          "top": "#3f5245",
+          "bottom": "#5b4236",
+          "accent": "#8a6b55",
+          "topMaterial": "aluminum"
+        }
+      },
+      {
+        "name": "Steel Mushroom",
+        "caseColorHex": "#9c9186",
+        "parts": {
+          "top": "#9c9186",
+          "bottom": "#a9abad",
+          "accent": "#c4c6c8",
+          "topMaterial": "aluminum"
+        }
+      }
+    ],
+    "features": [],
+    "wireless": false,
+    "priceUsd": 289,
+    "availability": "sold_out",
+    "storeUrl": "https://modedesigns.com/products/sonnet",
+    "affiliateUrl": "",
+    "imageUrl": null,
+    "sourceUrl": "https://modedesigns.com/products/sonnet",
+    "checkedOn": "2026-11-24",
+    "colorsApprox": true,
+    "needsCheck": [
+      "only Black Sesame has its colors described by Mode; the other colorways are estimated from their names",
+      "sold out on 2026-11-24; Mode says each 2026 colorway returns as limited in-stock"
+    ],
+    "notes": "Base kit price. Width 315, depth 143, front 19 mm, back 24 mm, 5.5 degree typing angle (Mode product page).",
+    "detail": "detailed",
+    "disclaimer": "KeyCraze is not affiliated with Mode Designs.",
+    "credits": [
+      {
+        "what": "Plate CAD for the 2026 Sonnet (exact key positions and plate size)",
+        "author": "Mode Designs LLC",
+        "license": "CERN-OHL-P-2.0",
+        "licenseUrl": "https://compendium.modedesigns.com/license/",
+        "sourceUrl": "https://compendium.modedesigns.com/keyboards/sonnet-2026/design-files/"
+      },
+      {
+        "what": "Official drawings of the 2026 Sonnet (case shape reference, shown in the gallery, resized)",
+        "author": "Mode Designs LLC",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "sourceUrl": "https://compendium.modedesigns.com/keyboards/sonnet-2026/"
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/images/sources/mode-sonnet-2026.webp",
+        "caption": "2026 Sonnet, assembled",
+        "credit": "Drawing © Mode Designs LLC, CC BY 4.0 (resized)"
+      },
+      {
+        "src": "/images/sources/mode-sonnet-2026-top.webp",
+        "caption": "Top case",
+        "credit": "Drawing © Mode Designs LLC, CC BY 4.0 (resized)"
+      },
+      {
+        "src": "/images/sources/mode-sonnet-2026-bottom.webp",
+        "caption": "Bottom case",
+        "credit": "Drawing © Mode Designs LLC, CC BY 4.0 (resized)"
+      }
+    ]
+  },
+  {
+    "id": "mode-encore-2026",
+    "name": "Encore (2026)",
+    "brand": "Mode Designs",
+    "layout": "65%",
+    "dimensionsMm": {
+      "length": 326,
+      "width": 125,
+      "height": 25
+    },
+    "caseShape": "standard",
+    "variants": [
+      {
+        "name": "Mocha Mushroom",
+        "caseColorHex": "#5b4236",
+        "parts": {
+          "top": "#6b4a32",
+          "middle": "#9c9186",
+          "bottom": "#5b4236",
+          "topMaterial": "wood"
+        }
+      },
+      {
+        "name": "Blue Mushroom",
+        "caseColorHex": "#33476e",
+        "parts": {
+          "top": "#6b4a32",
+          "middle": "#33476e",
+          "bottom": "#9c9186",
+          "topMaterial": "wood"
+        }
+      },
+      {
+        "name": "Golden Beige",
+        "caseColorHex": "#d9c9ad",
+        "parts": {
+          "top": "#d8b98a",
+          "middle": "#e6dccb",
+          "bottom": "#c9b8a4",
+          "topMaterial": "wood"
+        }
+      },
+      {
+        "name": "Forest Mocha",
+        "caseColorHex": "#3f5245",
+        "parts": {
+          "top": "#6b4a32",
+          "middle": "#3f5245",
+          "bottom": "#5b4236",
+          "topMaterial": "wood"
+        }
+      },
+      {
+        "name": "Maroon",
+        "caseColorHex": "#6b2630",
+        "parts": {
+          "top": "#6b4a32",
+          "middle": "#6b2630",
+          "bottom": "#9c9186",
+          "topMaterial": "wood"
+        }
+      },
+      {
+        "name": "Steel Forest",
+        "caseColorHex": "#3f5245",
+        "parts": {
+          "top": "#c4a57a",
+          "middle": "#3f5245",
+          "bottom": "#a9abad",
+          "topMaterial": "wood"
+        }
+      }
+    ],
+    "features": [],
+    "wireless": false,
+    "priceUsd": 299,
+    "availability": "varies",
+    "storeUrl": "https://modedesigns.com/pages/encore",
+    "affiliateUrl": "",
+    "imageUrl": null,
+    "sourceUrl": "https://modedesigns.com/pages/encore",
+    "checkedOn": "2026-11-24",
+    "colorsApprox": true,
+    "needsCheck": [
+      "back height is not listed by Mode; 24.5 mm estimated from the 5.5 degree angle",
+      "colors estimated from the wood and aluminum names on Mode's page",
+      "stock level not listed on the product page"
+    ],
+    "notes": "From $299. Width 326, depth 125, front 12.5 mm (19.7 mm at the chamfer), 5.5 degree angle. Wood top (walnut, maple or white oak), aluminum middle and bottom (Mode product page).",
+    "detail": "detailed",
+    "disclaimer": "KeyCraze is not affiliated with Mode Designs.",
+    "credits": [
+      {
+        "what": "Plate CAD for the 2026 Encore (exact key positions and plate size)",
+        "author": "Mode Designs LLC",
+        "license": "CERN-OHL-P-2.0",
+        "licenseUrl": "https://compendium.modedesigns.com/license/",
+        "sourceUrl": "https://compendium.modedesigns.com/keyboards/encore-2026/design-files/"
+      },
+      {
+        "what": "Official drawings of the 2026 Encore (case shape reference, shown in the gallery, resized)",
+        "author": "Mode Designs LLC",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "sourceUrl": "https://compendium.modedesigns.com/keyboards/encore-2026/"
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/images/sources/mode-encore-2026.webp",
+        "caption": "2026 Encore, assembled",
+        "credit": "Drawing © Mode Designs LLC, CC BY 4.0 (resized)"
+      },
+      {
+        "src": "/images/sources/mode-encore-2026-top.webp",
+        "caption": "Wood top frame",
+        "credit": "Drawing © Mode Designs LLC, CC BY 4.0 (resized)"
+      },
+      {
+        "src": "/images/sources/mode-encore-2026-middle.webp",
+        "caption": "Middle piece",
+        "credit": "Drawing © Mode Designs LLC, CC BY 4.0 (resized)"
+      },
+      {
+        "src": "/images/sources/mode-encore-2026-bottom.webp",
+        "caption": "Bottom case",
+        "credit": "Drawing © Mode Designs LLC, CC BY 4.0 (resized)"
+      }
+    ]
+  },
+  {
+    "id": "bakeneko65",
+    "name": "Bakeneko65",
+    "brand": "CannonKeys (open design by kkatano)",
+    "layout": "65%",
+    "dimensionsMm": {
+      "length": 315,
+      "width": 110,
+      "height": 30
+    },
+    "caseShape": "standard",
+    "variants": [
+      {
+        "name": "NG Navy",
+        "caseColorHex": "#26314f",
+        "finish": "matte"
+      },
+      {
+        "name": "NG Blue Grey",
+        "caseColorHex": "#6c7a89",
+        "finish": "matte"
+      },
+      {
+        "name": "NG Steel Blue",
+        "caseColorHex": "#4a6f94",
+        "finish": "matte"
+      },
+      {
+        "name": "NG White",
+        "caseColorHex": "#ecebe7",
+        "finish": "matte"
+      },
+      {
+        "name": "NG Black",
+        "caseColorHex": "#1f2022",
+        "finish": "matte"
+      },
+      {
+        "name": "NG Charcoal",
+        "caseColorHex": "#3b3d40",
+        "finish": "matte"
+      },
+      {
+        "name": "NG Khaki",
+        "caseColorHex": "#b9ad8b",
+        "finish": "matte"
+      },
+      {
+        "name": "NG Sage",
+        "caseColorHex": "#9aa98e",
+        "finish": "matte"
+      },
+      {
+        "name": "NG Dark Green",
+        "caseColorHex": "#2f4a3a",
+        "finish": "matte"
+      },
+      {
+        "name": "NG Lavender",
+        "caseColorHex": "#b7a9d6",
+        "finish": "matte"
+      },
+      {
+        "name": "NG Purple",
+        "caseColorHex": "#5c3f7e",
+        "finish": "matte"
+      },
+      {
+        "name": "NG Blush Red",
+        "caseColorHex": "#c9787a",
+        "finish": "matte"
+      },
+      {
+        "name": "Flash Black",
+        "caseColorHex": "#202124",
+        "finish": "glitter"
+      },
+      {
+        "name": "Flash Grey",
+        "caseColorHex": "#7d8085",
+        "finish": "glitter"
+      },
+      {
+        "name": "Pearl White",
+        "caseColorHex": "#f4f2ee",
+        "finish": "pearl"
+      }
+    ],
+    "features": [],
+    "wireless": false,
+    "priceUsd": 149.99,
+    "availability": "in_stock",
+    "storeUrl": "https://cannonkeys.com/products/bakeneko65",
+    "affiliateUrl": "",
+    "imageUrl": null,
+    "sourceUrl": "https://cannonkeys.com/products/bakeneko65",
+    "checkedOn": "2026-11-24",
+    "colorsApprox": true,
+    "needsCheck": [
+      "colors estimated from CannonKeys' color names",
+      "CannonKeys' cast version can differ slightly from kkatano's open case file",
+      "stock line on the store page was unclear on 2026-11-24"
+    ],
+    "notes": "Cast aluminum case, 6 degree angle. Open design: 315 x 110 x 30 mm, front height 18.5 mm (kkatano's README).",
+    "detail": "detailed",
+    "credits": [
+      {
+        "what": "Bakeneko65 V3 case 3D file (converted to a small web model) and key layout",
+        "author": "kkatano",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/kkatano/bakeneko-65/blob/master/LICENSE",
+        "sourceUrl": "https://github.com/kkatano/bakeneko-65"
+      },
+      {
+        "what": "Photo of a Bakeneko65 build (shown in the gallery, resized)",
+        "author": "kkatano",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/kkatano/bakeneko-65/blob/master/LICENSE",
+        "sourceUrl": "https://github.com/kkatano/bakeneko-65"
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/images/sources/bakeneko-65-kkatano.jpg",
+        "caption": "Bakeneko65 build by its designer",
+        "credit": "Photo © 2020 kkatano, MIT License (resized)"
+      }
+    ]
+  },
+  {
     "id": "gmk67",
     "name": "GMK67",
     "brand": "Zuoya",

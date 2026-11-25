@@ -1,8 +1,9 @@
 <script lang="ts">
 	// The 3D window: camera, lights, and drag-to-rotate with a slow 360° spin.
 	import { Canvas, T } from '@threlte/core';
-	import { OrbitControls } from '@threlte/extras';
+	import { ContactShadows, OrbitControls } from '@threlte/extras';
 	import KeyboardModel from './KeyboardModel.svelte';
+	import Studio from './Studio.svelte';
 	import type { Keyboard, Keycap, Variant } from '../../types';
 
 	let { keyboard, variant, keycap }: { keyboard: Keyboard; variant: Variant; keycap: Keycap } =
@@ -50,14 +51,20 @@
 			/>
 		</T.PerspectiveCamera>
 
-		<T.AmbientLight intensity={0.9} />
-		<T.DirectionalLight position={[3, 6, 4]} intensity={2} />
-		<T.DirectionalLight position={[-4, 3, -3]} intensity={0.7} />
+		<Studio />
+		<T.AmbientLight intensity={0.35} />
+		<T.DirectionalLight position={[3, 6, 4]} intensity={1.6} />
+		<T.DirectionalLight position={[-4, 3, -3]} intensity={0.5} />
 
 		<!-- Model is built in millimetres; 0.01 turns 300 mm into 3 scene units. -->
 		<T.Group scale={0.01}>
 			<KeyboardModel {keyboard} {variant} {keycap} />
 		</T.Group>
+
+		<!-- Soft shadow on the "desk". Re-drawn when the board or colors change. -->
+		{#key keyboard.id + variant.name + keycap.id}
+			<ContactShadows position.y={-0.125} scale={5} opacity={0.55} blur={2.4} far={1} resolution={512} frames={8} />
+		{/key}
 	</Canvas>
 
 	<div class="controls">
@@ -67,7 +74,18 @@
 		<span>Drag to rotate</span>
 	</div>
 </div>
-<p class="note">Preview only: shape, size and colors are approximate. Check the store photos.</p>
+{#if keyboard.detail === 'detailed'}
+	<p class="note">
+		<strong>Detailed 3D.</strong> Built from the maker's open design files. Colors are approximate.
+		{#if keyboard.disclaimer}{keyboard.disclaimer}{/if}
+		<a href="/credits">Credits</a>
+	</p>
+{:else}
+	<p class="note">
+		<strong>Basic preview.</strong> Built from public facts (size, layout, colors). Shape and colors are
+		approximate, so check the store photos.
+	</p>
+{/if}
 
 <style>
 	.viewer {
@@ -100,5 +118,11 @@
 		margin: 0.4rem 0 0;
 		font-size: 0.72rem;
 		color: var(--muted);
+	}
+	.note strong {
+		color: var(--text);
+	}
+	.note a {
+		color: var(--blue-2, #8ea2ff);
 	}
 </style>

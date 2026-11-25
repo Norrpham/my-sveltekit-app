@@ -403,6 +403,11 @@
     "colorsApprox": true,
     "needsCheck": [
       "price, key count and stock not re-checked on 2026-11-16 (page could not be opened)"
+    ],
+    "pattern": "asanoha",
+    "patternColors": [
+      "#f3c1d0",
+      "#b2456e"
     ]
   },
   {
@@ -440,6 +445,11 @@
     "needsCheck": [
       "price",
       "layout fit"
+    ],
+    "pattern": "kikko",
+    "patternColors": [
+      "#4a6b8a",
+      "#d7c4a3"
     ]
   },
   {
@@ -482,6 +492,11 @@
     "needsCheck": [
       "unofficial fan set",
       "108-key sets usually lack 65%/75% keys"
+    ],
+    "pattern": "uroko",
+    "patternColors": [
+      "#f3c33c",
+      "#f7f1df"
     ]
   },
   {
@@ -519,6 +534,11 @@
       "price",
       "unofficial fan set",
       "colors guessed"
+    ],
+    "pattern": "ichimatsu",
+    "patternColors": [
+      "#1d1d1d",
+      "#2f7a5a"
     ]
   },
   {
