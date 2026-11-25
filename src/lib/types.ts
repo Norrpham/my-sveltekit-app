@@ -34,8 +34,11 @@ export interface Variant {
 	name: string;
 	caseColorHex: string;
 	parts?: CaseParts;
-	/** Coating look: plain, with glitter, or glossy pearl. */
-	finish?: 'matte' | 'glitter' | 'pearl';
+	/**
+	 * Surface finish. anodized = satin metal (default); coated = powder/e-coat
+	 * with a fine texture; glitter = coat with sparkle; pearl = glossy clear coat.
+	 */
+	finish?: 'anodized' | 'coated' | 'glitter' | 'pearl';
 }
 
 /** Where an open design file or picture came from, and its license. */
@@ -51,6 +54,8 @@ export interface GalleryImage {
 	src: string;
 	caption: string;
 	credit: string; // shown under the picture
+	/** Camera angle that matches this picture ("Match the photo"). Degrees. */
+	view?: { azimuth: number; elevation: number };
 }
 
 export interface Keyboard {
@@ -82,6 +87,20 @@ export interface Keyboard {
 	gallery?: GalleryImage[];
 	/** Shown under the 3D view, e.g. "KeyCraze is not affiliated with Mode." */
 	disclaimer?: string;
+	/** Lights built into the board (from the store page). */
+	lighting?: Lighting;
+}
+
+export interface Lighting {
+	/** Light under each key: full RGB, one fixed color, or none. */
+	perKey: 'rgb' | 'white' | 'warm-white' | 'none';
+	/** Which side of each switch the LED sits on. South = toward the typist. */
+	ledSide?: 'north' | 'south';
+	/** Lights under the board that shine on the desk. */
+	underglow?: 'rgb' | 'white' | 'none';
+	/** Fixed LED color, e.g. "cool white" = #e8f0ff. */
+	color?: string;
+	source?: string;
 }
 
 export interface NoveltyKey {
@@ -117,6 +136,41 @@ export interface Keycap {
 	 */
 	pattern?: PatternName;
 	patternColors?: [string, string];
+	/** What the caps are made of and how the legends are made. Drives the look. */
+	material?: 'PBT' | 'ABS' | 'PC';
+	printing?: 'dye-sub' | 'double-shot' | 'laser' | 'pad-print';
+	/** A color for each group of keys, read from the store page or photos. */
+	colorMap?: Partial<Record<KeyGroup, string>>;
+	/** Colors for single keys, by legend (e.g. "Esc"). Wins over colorMap. */
+	keyColors?: Record<string, string>;
+	legends?: LegendStyle;
+	/** Keys covered by the character art on the real set (we show a pattern there). */
+	artKeys?: string[];
+	notes?: string;
+}
+
+export type KeyGroup =
+	| 'alpha'
+	| 'number'
+	| 'frow'
+	| 'mod'
+	| 'esc'
+	| 'enter'
+	| 'space'
+	| 'arrow'
+	| 'nav';
+
+export interface LegendStyle {
+	/** Printed on the top, or on the front side (side-printed). */
+	position: 'top' | 'front';
+	/** Modifier keys show full words ("Backspace"), icons ("⟵"), or both. */
+	mods: 'words' | 'icons' | 'icons+words';
+	/** Legends let light through (shine-through / side-lit). */
+	shine?: boolean;
+	/** Japanese kana in the corner, for sets that have them. */
+	kana?: boolean;
+	/** Legend color, if different from colors.legend. */
+	color?: string;
 }
 
 export type PatternName = 'asanoha' | 'ichimatsu' | 'uroko' | 'seigaiha' | 'kikko';

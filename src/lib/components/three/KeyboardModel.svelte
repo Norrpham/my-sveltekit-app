@@ -12,8 +12,20 @@
 	import Keys from './Keys.svelte';
 	import { metalLook } from './materials';
 
-	let { keyboard, variant, keycap }: { keyboard: Keyboard; variant: Variant; keycap: Keycap } =
-		$props();
+	let {
+		keyboard,
+		variant,
+		keycap,
+		lit = false
+	}: { keyboard: Keyboard; variant: Variant; keycap: Keycap; lit?: boolean } = $props();
+
+	// LED color for the keys, from the board's lighting facts.
+	let ledColor = $derived.by(() => {
+		const l = keyboard.lighting;
+		if (!l || l.perKey === 'none') return null;
+		if (l.perKey === 'rgb') return 'rgb';
+		return l.color ?? (l.perKey === 'warm-white' ? '#ffd9a8' : '#eef3ff');
+	});
 
 	let recipe = $derived(keyboard.detail === 'detailed' ? boardRecipes[keyboard.id] : undefined);
 	let layout = $derived(buildLayout(keyboard.layout, keyboard.features));
@@ -55,7 +67,7 @@
 
 {#if recipe}
 	<T.Group position.y={-12}>
-		<DetailedBoard {keyboard} {variant} {keycap} {recipe} />
+		<DetailedBoard {keyboard} {variant} {keycap} {recipe} {lit} {ledColor} />
 	</T.Group>
 {:else}
 <T.Group rotation.x={tilt} position.y={-caseH / 2}>
@@ -67,7 +79,7 @@
 
 	<!-- Keycaps -->
 	<T.Group position={[0, keyBottom, (keysFront + keysBack) / 2]}>
-		<Keys {layout} {keycap} />
+		<Keys {layout} {keycap} {lit} {ledColor} />
 	</T.Group>
 	<!-- Special parts -->
 	{#each layout.spots as s (s.type)}

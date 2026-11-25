@@ -365,50 +365,89 @@
   },
   {
     "id": "ds-nezuko",
-    "name": "Demon Slayer Nezuko (fan-made)",
+    "name": "Demon Slayer Nezuko full-art (fan-made)",
     "brand": "Kawaii Keycaps (seller)",
     "theme": "anime",
     "tags": [
       "demon slayer",
       "nezuko",
-      "pink"
+      "pink",
+      "full art",
+      "side-lit"
     ],
     "colors": {
-      "base": "#f3c1d0",
-      "legend": "#2b1b1b",
-      "accent": "#e8743b"
+      "base": "#f3d2dd",
+      "legend": "#ffffff",
+      "accent": "#f4eef1"
     },
-    "noveltyKeys": [
-      {
-        "key": "Esc",
-        "shape": "bamboo stick",
-        "color": "#5a8f3a"
-      }
-    ],
+    "noveltyKeys": [],
     "profile": "Cherry",
-    "keyCount": null,
+    "keyCount": 74,
     "fitsLayouts": [
       "60%",
-      "65%",
-      "75%"
+      "65%"
     ],
     "lowProfile": false,
     "officiallyLicensed": false,
     "priceUsd": 23.5,
-    "availability": "unknown",
+    "availability": "in_stock",
     "storeUrl": "https://kawaiikeycaps.com/product/demon-slayer-nezuko-keycap/",
     "affiliateUrl": "",
     "sourceUrl": "https://kawaiikeycaps.com/product/demon-slayer-nezuko-keycap/",
-    "checkedOn": "2026-11-16",
+    "checkedOn": "2026-11-25",
     "colorsApprox": true,
     "needsCheck": [
-      "price, key count and stock not re-checked on 2026-11-16 (page could not be opened)"
+      "colors and the art area were read from the store photos (no color list on the page)",
+      "the page does not list which keys are included beyond '74pcs full set'"
     ],
     "pattern": "asanoha",
     "patternColors": [
-      "#f3c1d0",
-      "#b2456e"
-    ]
+      "#f3d2dd",
+      "#c9849c"
+    ],
+    "material": "PBT",
+    "printing": "dye-sub",
+    "colorMap": {
+      "alpha": "#f3d2dd",
+      "number": "#f6e1e8",
+      "mod": "#f4eef1",
+      "esc": "#f4eef1",
+      "enter": "#f2cfdb",
+      "space": "#f3d2dd",
+      "arrow": "#f2cfdb",
+      "nav": "#f2cfdb"
+    },
+    "legends": {
+      "position": "front",
+      "mods": "words",
+      "shine": true,
+      "color": "#fbf6f8"
+    },
+    "artKeys": [
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "W",
+      "E",
+      "R",
+      "T",
+      "Y",
+      "S",
+      "D",
+      "F",
+      "G",
+      "H",
+      "X",
+      "C",
+      "V",
+      "B",
+      "Win",
+      "Alt",
+      "space"
+    ],
+    "notes": "One large Nezuko picture is printed across about 22 keys and the spacebar; legends are side-printed and translucent for RGB boards (store page)."
   },
   {
     "id": "ds-inosuke",

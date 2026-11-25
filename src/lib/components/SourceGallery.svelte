@@ -4,8 +4,7 @@
 	import { buyLink } from '../products';
 	import type { Keyboard } from '../types';
 
-	let { keyboard }: { keyboard: Keyboard } = $props();
-	let open = $state(0);
+	let { keyboard, open = $bindable(0) }: { keyboard: Keyboard; open?: number } = $props();
 	let pics = $derived(keyboard.gallery ?? []);
 </script>
 

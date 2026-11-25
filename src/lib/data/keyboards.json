@@ -258,62 +258,62 @@
       {
         "name": "NG Navy",
         "caseColorHex": "#26314f",
-        "finish": "matte"
+        "finish": "coated"
       },
       {
         "name": "NG Blue Grey",
         "caseColorHex": "#6c7a89",
-        "finish": "matte"
+        "finish": "coated"
       },
       {
         "name": "NG Steel Blue",
         "caseColorHex": "#4a6f94",
-        "finish": "matte"
+        "finish": "coated"
       },
       {
         "name": "NG White",
         "caseColorHex": "#ecebe7",
-        "finish": "matte"
+        "finish": "coated"
       },
       {
         "name": "NG Black",
         "caseColorHex": "#1f2022",
-        "finish": "matte"
+        "finish": "coated"
       },
       {
         "name": "NG Charcoal",
         "caseColorHex": "#3b3d40",
-        "finish": "matte"
+        "finish": "coated"
       },
       {
         "name": "NG Khaki",
         "caseColorHex": "#b9ad8b",
-        "finish": "matte"
+        "finish": "coated"
       },
       {
         "name": "NG Sage",
         "caseColorHex": "#9aa98e",
-        "finish": "matte"
+        "finish": "coated"
       },
       {
         "name": "NG Dark Green",
         "caseColorHex": "#2f4a3a",
-        "finish": "matte"
+        "finish": "coated"
       },
       {
         "name": "NG Lavender",
         "caseColorHex": "#b7a9d6",
-        "finish": "matte"
+        "finish": "coated"
       },
       {
         "name": "NG Purple",
         "caseColorHex": "#5c3f7e",
-        "finish": "matte"
+        "finish": "coated"
       },
       {
         "name": "NG Blush Red",
         "caseColorHex": "#c9787a",
-        "finish": "matte"
+        "finish": "coated"
       },
       {
         "name": "Flash Black",
@@ -339,14 +339,14 @@
     "affiliateUrl": "",
     "imageUrl": null,
     "sourceUrl": "https://cannonkeys.com/products/bakeneko65",
-    "checkedOn": "2026-11-24",
+    "checkedOn": "2026-11-25",
     "colorsApprox": true,
     "needsCheck": [
       "colors estimated from CannonKeys' color names",
       "CannonKeys' cast version can differ slightly from kkatano's open case file",
       "stock line on the store page was unclear on 2026-11-24"
     ],
-    "notes": "Cast aluminum case, 6 degree angle. Open design: 315 x 110 x 30 mm, front height 18.5 mm (kkatano's README).",
+    "notes": "Cast aluminum case with a coated finish (NG = light texture, Flash = glitter, Pearl = glossy clear coat), 6 degree angle, FR4 plate, hotswap PCB with cool white per-key LEDs (south-facing). Open design: 315 x 110 x 30 mm, front height 18.5 mm (kkatano's README).",
     "detail": "detailed",
     "credits": [
       {
@@ -368,9 +368,20 @@
       {
         "src": "/images/sources/bakeneko-65-kkatano.jpg",
         "caption": "Bakeneko65 build by its designer",
-        "credit": "Photo © 2020 kkatano, MIT License (resized)"
+        "credit": "Photo © 2020 kkatano, MIT License (resized)",
+        "view": {
+          "azimuth": 0,
+          "elevation": 89
+        }
       }
-    ]
+    ],
+    "lighting": {
+      "perKey": "white",
+      "ledSide": "south",
+      "underglow": "none",
+      "color": "#e8f0ff",
+      "source": "https://cannonkeys.com/blogs/news-and-updates/the-cannonkeys-bakeneko65"
+    }
   },
   {
     "id": "gmk67",

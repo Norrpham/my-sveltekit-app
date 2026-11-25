@@ -15,8 +15,17 @@
 		keyboard,
 		variant,
 		keycap,
-		recipe
-	}: { keyboard: Keyboard; variant: Variant; keycap: Keycap; recipe: BoardRecipe } = $props();
+		recipe,
+		lit = false,
+		ledColor = null
+	}: {
+		keyboard: Keyboard;
+		variant: Variant;
+		keycap: Keycap;
+		recipe: BoardRecipe;
+		lit?: boolean;
+		ledColor?: string | null;
+	} = $props();
 
 	let layout = $derived(buildLayout(keyboard.layout, keyboard.features, keyboard.id));
 	let keysD = $derived(layout.depthU * U);
@@ -111,7 +120,7 @@
 			</T.Mesh>
 		{/if}
 		<T.Group position={[0, r.keysAboveRim, keysCenterZ]}>
-			<Keys {layout} {keycap} plateColor={r.plateColor} />
+			<Keys {layout} {keycap} plateColor={r.plateColor} {lit} {ledColor} />
 		</T.Group>
 	</T.Group>
 {:else}
@@ -140,6 +149,6 @@
 	{/if}
 
 	<T.Group position={[0, keysY, keysCenterZ]} rotation.x={slopeAngle}>
-		<Keys {layout} {keycap} plateColor={r.plateColor} />
+		<Keys {layout} {keycap} plateColor={r.plateColor} {lit} {ledColor} />
 	</T.Group>
 {/if}
